@@ -22,4 +22,7 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
  - PC2 ROS Node should convert data into x, y, z and use specific ROS message type to visualize the same in RVIZ 
 	* Hint : Teams are free to look up open source and understand.
    * Double-Hint : *Pcl-classes*
- - Once conversion is done, another topic of the type as described above must be published and using RVIZ, it mist be visualized
+ - Once conversion is done, another topic of the type as described above must be published and using RVIZ, it must be visualized
+
+## Introduction ##
+The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. ROS is neither a framework of libraries nor an operating system, thus it is known as a *Middleware* or a *Meta Operating System*.
