@@ -52,6 +52,21 @@ In order to run Publisher-Suscriber model or Server-Client model one must setup 
 
 - Run the following commands in PC1 (Master)
   ```
+  // Terminal 1 -
+  roscore
+
+  // Terminal 2 -
+  ssh 10.3.4.233
+  export ROS_IP=10.3.4.233
+  rosrun beginner_tutorials talker
+    
+    ```
+- Run the following commands in PC2
+  ```
+  ssh 10.3.4.245
+  export ROS_MASTER_URI=http://10.3.4.233:11311
+  export ROS_IP=10.3.4.245
+  rosrun beginner_tutorials listener
     
     ```
 
