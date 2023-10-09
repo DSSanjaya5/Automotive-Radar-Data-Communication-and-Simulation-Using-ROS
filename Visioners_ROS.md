@@ -47,5 +47,15 @@ Wireshark is a network protocol analyzer, or an application that captures packet
 
 ![Service-MultipleServiceClient](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364)
 
+## Communication Between two PCs ##
+In order to run Publisher-Suscriber model or Server-Client model one must setup the network between to PCs. We have used an ethernet cable as a medium of communication between two PCs. Thus enabling complete bi-directional connectivity between the two PCs. We must make sure that each PC must advertise itself by a name/ip that the other PC can resolve. We only need one master. All nodes must be configured to use the same master, via ROS_MASTER_URI. 
+
+- Run the following commands in PC1 (Master)
+  ```
+    
+    ```
+
+![Screenshot from 2023-10-07 13-40-42](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/724d0aaf-8539-4826-a5f6-96093015e14b)
+
 ![Screenshot from 2023-10-07 13-40-56](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/190fe519-27bf-4758-b65e-4f8cdc98ae84)
 
