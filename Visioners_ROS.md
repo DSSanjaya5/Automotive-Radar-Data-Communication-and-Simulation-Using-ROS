@@ -35,4 +35,5 @@ In this hackathon, we use ROS Noetic and it requires Ubuntu 20.04.6 LTS. To down
 #### ROS Noetic Ninjemys and RVIZ ####
 For the installation of the ROS Noetic Ninjemys follow the steps provided [here](http://wiki.ros.org/noetic/Installation/Ubuntu). RVIZ (ROS-Visualization) is a standard visualization tool included as part of the ROS ecosystem. So there is no need to install RVIZ separately.
 
-#### 
+#### Wireshark ####
+Wireshark is a network protocol analyzer, or an application that captures packets from a network connection, such as from your computer to the internet. For the installation of the Wireshark tool follow the steps provided [here](https://www.geeksforgeeks.org/how-to-install-and-use-wireshark-on-ubuntu-linux/).
