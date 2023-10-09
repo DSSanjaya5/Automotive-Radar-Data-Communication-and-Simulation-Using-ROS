@@ -32,5 +32,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 #### Ubuntu 20.04.6 LTS ####
 In this hackathon, we use ROS Noetic and it requires Ubuntu 20.04.6 LTS (Focal Fossa). To download the Ubuntu 20.04.6 LTS iso file [click here](https://releases.ubuntu.com/focal/)
 
-#### ROS Noetic Ninjemys ####
+#### ROS Noetic Ninjemys and RVIZ####
+For the installation of the ROS Noetic Ninjemys follow the steps provided [here](http://wiki.ros.org/noetic/Installation/Ubuntu). RVIZ (ROS-Visualization) is a standard visualization tool included as part of the ROS ecosystem. So there is no need to install RVIZ separately.
 
+#### 
