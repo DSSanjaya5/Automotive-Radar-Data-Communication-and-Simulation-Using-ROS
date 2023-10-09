@@ -26,3 +26,11 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
 
 ## Introduction ##
 The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. ROS is neither a framework of libraries nor an operating system, thus it is known as a *Middleware* or a *Meta Operating System*.
+
+## Installation of Softwares ##
+
+#### Ubuntu 20.04.6 LTS ####
+In this hackathon, we use ROS Noetic and it requires Ubuntu 20.04.6 LTS (Focal Fossa). To download the Ubuntu 20.04.6 LTS iso file [click here](https://releases.ubuntu.com/focal/)
+
+#### ROS Noetic Ninjemys ####
+
