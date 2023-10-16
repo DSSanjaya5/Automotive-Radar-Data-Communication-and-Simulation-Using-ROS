@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "pc1");                  // Initialization if the ROS Node
+  ros::init(argc, argv, "pc1");                  // Initialization of the ROS Node
 
   ros::NodeHandle n;                             // Declaration of the NodeHandle
 
