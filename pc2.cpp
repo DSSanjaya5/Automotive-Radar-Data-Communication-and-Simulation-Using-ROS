@@ -34,9 +34,7 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "pc2");                                          // Initialization of ROS Node
   ros::NodeHandle n;                                                     // Declaration of the NodeHandle
-  ros::Subscriber sub = n.subscribe("RadarData", 1000, processingCallback);  // Advertise
-
-  ros::spin();
-
+  ros::Subscriber sub = n.subscribe("RadarData", 1000, processingCallback);  // Advertising the Subscriber Node subscribing to the topic - "RadarData" and 1000 being the buffer size 
+  ros::spin();                                                           // will not return until the node has been shutdown
   return 0;
 }
