@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
   ros::Publisher RadarData_pub = n.advertise<hackathon::radar_data>("RadarData", 1000);        // Advertising the Publisher Node publishing over topic - "RadarData" and 1000 being the buffer size 
   
-  ros::Rate loop_rate(1.5);                      // Setting the publishing rate = 1.5 Hz
+  ros::Rate loop_rate(1.5);                      // Initialising the publishing rate = 1.5 Hz
 
   // Declaration of Random Data Generators
   default_random_engine gen;
@@ -30,9 +30,9 @@ int main(int argc, char **argv)
     
     for(int i=0; i<6; i++)                        // Loop for Number_Of_Locations = 6
     {
-      loc.radius = 9;                             // Set Radius
-      loc.azimuthAngle = gen_azimuth(gen);        // Set Azimuth Angle
-      loc.elevationAngle = gen_elevation(gen);    // Set Elevation Angle
+      loc.radius = 9;                             // Initialise Radius
+      loc.azimuthAngle = gen_azimuth(gen);        // Initialise Azimuth Angle
+      loc.elevationAngle = gen_elevation(gen);    // Initialise Elevation Angle
       data.location_list.push_back(loc);          // Store the values into data
       ROS_INFO_STREAM("R = "<<loc.radius<<", "<<"A = "<<loc.azimuthAngle<<", "<<"E = "<<loc.elevationAngle<<endl);
     }
