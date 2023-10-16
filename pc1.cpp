@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
   ros::NodeHandle n;                             // Declaration of the NodeHandle
 
-  ros::Publisher RadarData_pub = n.advertise<hackathon::radar_data>("RadarData", 1000);        // Advertising the Publisher Node publishing over topic - "RadarData" 
+  ros::Publisher RadarData_pub = n.advertise<hackathon::radar_data>("RadarData", 1000);        // Advertising the Publisher Node publishing over topic - "RadarData" and 1000 being the buffer size 
   
   ros::Rate loop_rate(1.5);                      // Setting the publishing rate = 1.5 Hz
 
