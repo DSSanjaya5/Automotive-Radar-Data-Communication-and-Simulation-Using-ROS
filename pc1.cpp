@@ -8,14 +8,13 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
+  ros::init(argc, argv, "pc1");      // Initialization if the ROS Node
 
-  ros::init(argc, argv, "pc1");
+  ros::NodeHandle n;                 // Declaration of the NodeHandle
 
-  ros::NodeHandle n;
+  ros::Publisher RadarData_pub = n.advertise<hackathon::radar_data>("RadarData", 1000);        // Advertising the Publisher Node
 
-  ros::Publisher RadarData_pub = n.advertise<hackathon::radar_data>("RadarData", 1000);
-
-  ros::Rate loop_rate(1.5);
+  ros::Rate loop_rate(1.5);          // Setting the publishing rate = 1.5 Hz
   
   default_random_engine gen;
   uniform_real_distribution<double>  gen_azimuth(-180.0, 180.0);
@@ -39,7 +38,6 @@ int main(int argc, char **argv)
     RadarData_pub.publish(data);
     ros::spinOnce();
     loop_rate.sleep();
-    //break;
   }
 
   return 0;
