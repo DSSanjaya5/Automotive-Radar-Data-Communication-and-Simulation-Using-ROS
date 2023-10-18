@@ -55,7 +55,7 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
   roscore
 
   // Terminal 2 -
-  export ROS_IP=10.3.4.233
+  export ROS_IP=10.0.0.1
   rosrun beginner_tutorials talker
     
 ![Screenshot from 2023-10-16 17-05-37](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/fb6cfb1d-0a62-4223-b071-acf82102de07)
@@ -63,8 +63,8 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
   
 - Run the following commands in PC2
   ```
-  export ROS_MASTER_URI=http://10.3.4.233:11311
-  export ROS_IP=10.3.4.245
+  export ROS_IP=10.0.0.2
+  export ROS_MASTER_URI=http://10.0.0.1:11311
   rosrun beginner_tutorials listener
     
     ```
