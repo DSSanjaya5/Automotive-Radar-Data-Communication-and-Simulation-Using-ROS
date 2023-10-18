@@ -56,7 +56,7 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
 
   // Terminal 2 -
   export ROS_IP=10.0.0.1
-  rosrun beginner_tutorials talker
+  rosrun hackathon pc1
     
 ![Screenshot from 2023-10-16 17-05-37](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/fb6cfb1d-0a62-4223-b071-acf82102de07)
 
@@ -65,7 +65,7 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
   ```
   export ROS_IP=10.0.0.2
   export ROS_MASTER_URI=http://10.0.0.1:11311
-  rosrun beginner_tutorials listener
+  rosrun hackathon pc2
     
     ```
 ![Screenshot from 2023-10-16 17-04-36](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/007d060a-44d2-4e74-ab06-269975553014)
