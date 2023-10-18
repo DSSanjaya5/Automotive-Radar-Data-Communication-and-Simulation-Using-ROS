@@ -68,5 +68,4 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
   rosrun beginner_tutorials listener
     
     ```
-![Screenshot from 2023-10-07 13-40-56](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/190fe519-27bf-4758-b65e-4f8cdc98ae84)
-
+![Screenshot from 2023-10-16 17-04-36](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/007d060a-44d2-4e74-ab06-269975553014)
