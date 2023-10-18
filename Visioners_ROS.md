@@ -58,8 +58,8 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
   export ROS_IP=10.3.4.233
   rosrun beginner_tutorials talker
     
-    ```
-  ![Screenshot from 2023-10-07 13-40-42](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/724d0aaf-8539-4826-a5f6-96093015e14b)
+![Screenshot from 2023-10-16 17-05-37](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/fb6cfb1d-0a62-4223-b071-acf82102de07)
+
   
 - Run the following commands in PC2
   ```
