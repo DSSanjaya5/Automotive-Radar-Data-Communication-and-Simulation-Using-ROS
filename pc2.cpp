@@ -22,7 +22,7 @@ void processingCallback(const hackathon::radar_data r_data)
   
     float y = r_data.location_list[i].radius*sin((180/M_PI)*(90-r_data.location_list[i].elevationAngle))*sin((180/M_PI)*r_data.location_list[i].azimuthAngle);
   
-    float z = r_data.location_list[i].radius*sin((180/M_PI)*(90-r_data.location_list[i].elevationAngle));
+    float z = r_data.location_list[i].radius*cos((180/M_PI)*(90-r_data.location_list[i].elevationAngle));
     
     ROS_INFO_STREAM("x = "<<x<<", "<<"y = "<<y<<", "<<"z = "<<z<<endl);
   
