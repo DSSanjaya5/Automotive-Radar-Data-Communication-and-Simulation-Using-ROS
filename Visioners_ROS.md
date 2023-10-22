@@ -1,4 +1,4 @@
-# BITES-BOSCH ROS Hackathon #
+## BITES-BOSCH ROS Hackathon ##
 This is the documentation of the ROS hackathon by Team Visioners, KLE Technological University, Hubli.
 
 The BITES-Bosch hackathon emerges as an exceptional opportunity for students affiliated with BITES Member Institutions. It empowers them to apply their knowledge actively, foster collaboration with like-minded peers, and innovate practical solutions within the captivating domains of robotics and computer vision.
