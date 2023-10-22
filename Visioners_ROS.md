@@ -1,11 +1,9 @@
 ## BITES-BOSCH ROS Hackathon ##
-This is the documentation of the ROS hackathon by Team Visioners, KLE Technological University, Hubli.
-
 The BITES-Bosch hackathon emerges as an exceptional opportunity for students affiliated with BITES Member Institutions. It empowers them to apply their knowledge actively, foster collaboration with like-minded peers, and innovate practical solutions within the captivating domains of robotics and computer vision.
 
 This exciting hackathon unfolds with two intriguing themes:
- -"Pixel Quest" - A dedicated journey into Image Processing
- -"RoboHive: Unleashing the Power of ROS" - A deep exploration of ROS (Robot Operating System).
+ - "Pixel Quest" - A dedicated journey into Image Processing
+ - "RoboHive: Unleashing the Power of ROS" - A deep exploration of ROS (Robot Operating System).
  
 This event acts as a catalyst, bringing students together to engage in projects and challenges related to image analysis, computer vision, and robotics, all operating within the framework of ROS. The results of these gatherings not only cultivate a robust sense of community but also kindle enthusiasm among participants, propelling them to further explore the boundless potential of ROS and image processing within the realm of robotics applications.
 
