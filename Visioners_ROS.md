@@ -5,8 +5,8 @@ The BITES-Bosch hackathon emerges as an exceptional opportunity for students aff
 
 This exciting hackathon unfolds with two intriguing themes:
 
-1)"Pixel Quest" - A dedicated journey into Image Processing.
-2)"RoboHive: Unleashing the Power of ROS" - A deep exploration of ROS (Robot Operating System).
+ 1)"Pixel Quest" - A dedicated journey into Image Processing.
+ 2)"RoboHive: Unleashing the Power of ROS" - A deep exploration of ROS (Robot Operating System).
 This event acts as a catalyst, bringing students together to engage in projects and challenges related to image analysis, computer vision, and robotics, all operating within the framework of ROS. The results of these gatherings not only cultivate a robust sense of community but also kindle enthusiasm among participants, propelling them to further explore the boundless potential of ROS and image processing within the realm of robotics applications.
 
 ## Problem Statement ##
