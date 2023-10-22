@@ -9,7 +9,7 @@ Hackathon Themes:
 
 This hackathon is a collective event where the students come together to work on projects and challenges related to image analysis, computer vision and challenges related to robotics using the ROS framework. These events often foster a sense of community and excitement among participants, inspiring them to further explore the potential of ROS and image processing in robotics applications.
 
-## Problem Statement - ROS – RoboHive: Unleashing the power of ROS ##
+## Problem Statement - ROS ##
 Using ROS, Build a two-PC communication model that will acheive the following 
 
 We define 2 PCs(Linux Machines) as follows: PC1 and PC2 
