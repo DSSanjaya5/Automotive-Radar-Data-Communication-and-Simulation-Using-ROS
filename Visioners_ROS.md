@@ -1,13 +1,15 @@
-## BITES-BOSCH ROS Hackathon ##
-The BITES-Bosch hackathon emerges as an exceptional opportunity for students affiliated with BITES Member Institutions. It empowers them to apply their knowledge actively, foster collaboration with like-minded peers, and innovate practical solutions within the captivating domains of robotics and computer vision.
+## BITES-BOSCH Hackathon ##
+BITES-Bosch hackathon is an excellent opportunity for the students of BITES Member Institutions to apply their knowledge, collaborate with like-minded individuals, and create practical solutions in the field of robotics and computer vision.
 
-This exciting hackathon unfolds with two intriguing themes:
- - "Pixel Quest" - A dedicated journey into Image Processing
- - "RoboHive: Unleashing the Power of ROS" - A deep exploration of ROS (Robot Operating System).
- 
-This event acts as a catalyst, bringing students together to engage in projects and challenges related to image analysis, computer vision, and robotics, all operating within the framework of ROS. The results of these gatherings not only cultivate a robust sense of community but also kindle enthusiasm among participants, propelling them to further explore the boundless potential of ROS and image processing within the realm of robotics applications.
+Hackathon Themes:
 
-## Problem Statement ##
+• Image Processing – Pixel Quest
+
+• ROS – RoboHive: Unleashing the power of ROS
+
+This hackathon is a collective event where the students come together to work on projects and challenges related to image analysis, computer vision and challenges related to robotics using the ROS framework. These events often foster a sense of community and excitement among participants, inspiring them to further explore the potential of ROS and image processing in robotics applications.
+
+## Problem Statement - ROS ##
 Using ROS, Build a two-PC communication model that will acheive the following 
 
 We define 2 PCs(Linux Machines) as follows: PC1 and PC2 
