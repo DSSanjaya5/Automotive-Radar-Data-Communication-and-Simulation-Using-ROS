@@ -27,7 +27,7 @@ int main(int argc, char **argv)
   //uniform_real_distribution<double>  gen_radius(0.0, 100.0);
   
   while (ros::ok())
-  { num++;
+  {
     hackathon::location loc;
     hackathon::radar_data data;
     int num_of_loc;
