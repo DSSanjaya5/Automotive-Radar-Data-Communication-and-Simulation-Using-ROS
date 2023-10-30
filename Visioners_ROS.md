@@ -19,15 +19,17 @@
 
 ***
 ## About BITES-BOSCH Hackathon ##
-BITES-Bosch hackathon is an excellent opportunity for the students of BITES Member Institutions to apply their knowledge, collaborate with like-minded individuals, and create practical solutions in the field of robotics and computer vision.
+<p align="justify">
+BITES-Bosch hackathon is an excellent opportunity for the students of BITES Member Institutions to apply their knowledge, collaborate with like-minded individuals, and create practical solutions in the field of robotics and computer vision. </p>
 
 Hackathon Themes:
 
 • Image Processing – Pixel Quest
 
 • ROS – RoboHive: Unleashing the power of ROS
+<p align="justify">
+This hackathon is a collective event where the students come together to work on projects and challenges related to image analysis, computer vision and challenges related to robotics using the ROS framework. These events often foster a sense of community and excitement among participants, inspiring them to further explore the potential of ROS and image processing in robotics applications. </p>
 
-This hackathon is a collective event where the students come together to work on projects and challenges related to image analysis, computer vision and challenges related to robotics using the ROS framework. These events often foster a sense of community and excitement among participants, inspiring them to further explore the potential of ROS and image processing in robotics applications.
 ***
 ## Problem Statement - ROS ##
 Using ROS, Build a two-PC communication model that will acheive the following 
@@ -53,7 +55,9 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
  - Once conversion is done, another topic of the type as described above must be published and using RVIZ, it must be visualized
 ***
 ## Introduction ##
-The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. ROS is neither a framework of libraries nor an operating system, thus it is known as a *Middleware* or a *Meta Operating System*.
+<p align="justify">
+The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. ROS is neither a framework of libraries nor an operating system, thus it is known as a *Middleware* or a *Meta Operating System*. </p>
+
 ***
 ## Installation of Softwares ##
 
@@ -65,6 +69,7 @@ For the installation of the ROS Noetic Ninjemys follow the steps provided [here]
 
 #### Wireshark ####
 Wireshark is a network protocol analyzer, or an application that captures packets from a network connection, such as from your computer to the internet. For the installation of the Wireshark tool follow the steps provided [here](https://www.geeksforgeeks.org/how-to-install-and-use-wireshark-on-ubuntu-linux/).
+
 ***
 ## Publisher-Subscriber Model ##
 
