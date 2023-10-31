@@ -1,6 +1,7 @@
 # BITES-BOSCH Hackathon 2023 #
-### Documentation is provided in the file - [Visioners_ROS.md](Visioners_ROS.md) ###
+#### Documentation is provided in the file - [Visioners_ROS.md](Visioners_ROS.md) ####
 
+***
 ## Project Description: ##
 
 ### Problem Statement:Using ROS, Build a two-PC communication model that will acheive the following ###
