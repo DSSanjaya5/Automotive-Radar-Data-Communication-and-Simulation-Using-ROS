@@ -1,4 +1,5 @@
 # BITES-BOSCH Hackathon 2023 #
+### Documentation is provided in the file - [Visioners_ROS.md]() ###
 
 ## Project Description: ##
 
@@ -33,6 +34,3 @@ The hackathon folder consists of following folders:
 		
 5) srv   : Consists of .srv file required for server-client model		
  	        radar_data_srv.srv : consists of array of data type location
- 	        
- 	        
-Documentation is provided Visioners_ROS.md
