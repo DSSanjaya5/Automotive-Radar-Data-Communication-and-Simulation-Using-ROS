@@ -21,11 +21,11 @@ int main(int argc, char **argv)
     // Set the publishing rate = 1.5 Hz
     ros::Rate loop_rate(1.5);
   
-    // Declaration of the random generators
+    // Declaration of the random generators (Data range based on MRR Sensor by BOSCH)
     default_random_engine gen;
-    normal_distribution<double>  gen_azimuth(-30.0, 30.0);
-    normal_distribution<double>  gen_elevation(-30.0, 30.0);
-    normal_distribution<double>  gen_radius(0.0, 100.0);
+    normal_distribution<double>  gen_azimuth(-42.0, 42.0);
+    normal_distribution<double>  gen_elevation(-6.0, 6.0);
+    normal_distribution<double>  gen_radius(0.0, 160.0);
   
     // Variable to update radius cyclically
     int cyclicIncrementor = 0;
