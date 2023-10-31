@@ -1,0 +1,21 @@
+<!-- ROS_hackathon.launch -->
+
+<launch>
+
+    <param name="ROS-MASTER_URI" value="http://10.0.0.1:11311" />
+    <param name="ROS_IP" value="10.0.0.1" />
+    
+    <group>
+            <machine name="PC2" address="10.0.0.2" password="123456" env-loader="/home/user/catkin_ws/devel/env.sh"/>
+            <!--include file="/home/user/catkin_ws/src/hackathon/launch/ROS_hack.launch"/-->
+            <node machine="PC2" pkg="hackathon" type="pc2" name="pc2" output="screen"/>
+          
+    </group>
+    
+    <group>
+    	    <machine name="PC1" address="10.0.0.1" env-loader="/home/user/catkin_ws/devel/env.sh"/>
+	    <node machine="PC1" pkg="hackathon" type="pc1" name="pc1" output="screen" launch-prefix="xterm -e"/>
+      	    <node machine="PC1" type="rviz" name="rviz" pkg="rviz" args="-d $(find hackathon)/rviz/config_file.rviz" />
+    </group>
+    
+</launch>
