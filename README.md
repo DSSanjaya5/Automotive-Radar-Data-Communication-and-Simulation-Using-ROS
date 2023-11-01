@@ -22,7 +22,7 @@ The hackathon folder consists of following folders:
    * [radar_data_srv.srv](/hackathon/srv/radar_data_srv.srv) : consists of array of data type location
 
 4. [launch](/hackathon/launch) : Consists of a .launch file used to run all the nodes simultaneously
-   * [ROS_hackathon.launch](/hackathon/launch/ros_hackathon.launch)
+   * [ROS_hackathon.launch](/hackathon/launch/ROS_hackathon.launch)
 
 
 ***
