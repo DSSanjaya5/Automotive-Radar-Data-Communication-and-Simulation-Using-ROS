@@ -8,7 +8,7 @@ Every ROS project requires a catkin workspace, which consists of a ROS packages.
  
 The hackathon folder consists of following folders:
 
-1. [src](src) : Consists of .cpp files, namely
+1. [src](/hackathon/src) : Consists of .cpp files, namely
    * [pc1.cpp](pc1) : publisher of pub-sub model
    * [pc2.cpp](pc2) : subsciber of pub-sub model
    * [pc1_server.cpp](pc1_server) : server file of server client model
