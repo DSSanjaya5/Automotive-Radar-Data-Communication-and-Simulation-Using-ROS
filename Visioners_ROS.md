@@ -73,7 +73,7 @@ Wireshark is a network protocol analyzer, or an application that captures packet
 ***
 ## Publisher-Subscriber Model ##
 
-![Topic-MultiplePublisherandMultipleSubscriber](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac)
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.png"width=50% height=50%>
 
 ***
 ## Server-Client Model ##
