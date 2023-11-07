@@ -47,9 +47,9 @@ int main(int argc, char **argv)
             for(int i=0; i<srv.response.location_list.size(); i++)
             {
           
-                float x = srv.response.location_list[i].radius*sin((180/M_PI)*(90-srv.response.location_list[i].elevationAngle))*cos((180/M_PI)*srv.response.location_list[i].azimuthAngle);
-                float y = srv.response.location_list[i].radius*sin((180/M_PI)*(90-srv.response.location_list[i].elevationAngle))*sin((180/M_PI)*srv.response.location_list[i].azimuthAngle);
-                float z = srv.response.location_list[i].radius*cos((180/M_PI)*(90-srv.response.location_list[i].elevationAngle));
+                float x = srv.response.location_list[i].radius*sin((M_PI/180)*(90-srv.response.location_list[i].elevationAngle))*cos((M_PI/180)*srv.response.location_list[i].azimuthAngle);
+                float y = srv.response.location_list[i].radius*sin((M_PI/180)*(90-srv.response.location_list[i].elevationAngle))*sin((M_PI/180)*srv.response.location_list[i].azimuthAngle);
+                float z = srv.response.location_list[i].radius*cos((M_PI/180)*(90-srv.response.location_list[i].elevationAngle));
     
                 ROS_INFO_STREAM("x = "<<x<<", "<<"y = "<<y<<", "<<"z = "<<z<<endl);
   
