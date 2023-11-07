@@ -28,9 +28,9 @@ void processingCallback(const hackathon::radar_data r_data)
     for(int i=0; i<r_data.location_list.size(); i++)
     {
   
-        float x = r_data.location_list[i].radius*sin((180/M_PI)*(90-r_data.location_list[i].elevationAngle))*cos((180/M_PI)*r_data.location_list[i].azimuthAngle);  
-        float y = r_data.location_list[i].radius*sin((180/M_PI)*(90-r_data.location_list[i].elevationAngle))*sin((180/M_PI)*r_data.location_list[i].azimuthAngle); 
-        float z = r_data.location_list[i].radius*cos((180/M_PI)*(90-r_data.location_list[i].elevationAngle));
+        float x = r_data.location_list[i].radius*sin((M_PI/180)*(90-r_data.location_list[i].elevationAngle))*cos((M_PI/180)*r_data.location_list[i].azimuthAngle);  
+        float y = r_data.location_list[i].radius*sin((M_PI/180)*(90-r_data.location_list[i].elevationAngle))*sin((M_PI/180)*r_data.location_list[i].azimuthAngle); 
+        float z = r_data.location_list[i].radius*cos((M_PI/180)*(90-r_data.location_list[i].elevationAngle));
     
         ROS_INFO_STREAM("x = "<<x<<", "<<"y = "<<y<<", "<<"z = "<<z<<endl);
     
