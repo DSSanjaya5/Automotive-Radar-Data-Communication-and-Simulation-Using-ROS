@@ -15,6 +15,8 @@
  + [Publisher-Subscriber Model](#publisher-subscriber-model)
  + [Server-Client Model](#server-client-model)
  + [Communication Between two PCs](#communication-between-two-pcs)
+ + [Data Generation](#data-generation)
+ + [Data Visualization](#data-visualization)
 </details>
 
 ***
@@ -102,3 +104,25 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
     
     ```
 ![Screenshot from 2023-10-16 17-04-36](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/007d060a-44d2-4e74-ab06-269975553014)
+
+***
+## Data Generation ##
+The sensor data generation can be done in two following ways i.e reading data from a csv file or generating points using random number generator engine, the functions which are part of standard Library of C++. There exists many random distribution functions such as 'Uniform_int_distribution', 'Uniform_real_distribution', 'normal_ddistribution' and 'poission_distribution'. Among them 'normal_distribution' produces more realistic data, hence used
+***
+## Data Visualization ##
+To visualize the data sent by pc1(i.e sensor node) stored in the form of point cloud, the Rviz tool is used
+
+Here visulaization of two type of data is done i.e
+1) Data according to range of mid range radars
+2) Points in a Square representing different planes
+
+IMG1
+IMG2
+***
+## Data Conversions ##
+The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which has tobe transformed into cartesian coordinate system (consisting of x, y and z coordinates) in pc2, this is done using following formulae
+
+* x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
+* y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
+* z = radius * cos( (PI/180) * (90-elevationAngle))
+
