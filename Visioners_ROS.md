@@ -17,7 +17,7 @@
  + [Communication Between two PCs](#communication-between-two-pcs)
  + [Data Generation](#data-generation)
  + [Data Visualization](#data-visualization)
- + [Data Conversions](#data-converions)
+ + [Data Conversions](#data-conversions)
 </details>
 
 ***
