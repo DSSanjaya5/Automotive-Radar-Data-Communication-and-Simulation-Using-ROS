@@ -108,12 +108,13 @@ To run the Publisher-Suscriber model or Server-Client model one must set up the 
 
 ***
 ## Data Generation ##
-The sensor data generation can be done in two following ways i.e reading data from a csv file or generating points using random number generator engine, the functions which are part of standard Library of C++. There exists many random distribution functions such as *
+The sensor data generation can be done in two following ways i.e reading data from a csv file or generating points using random number generator engine, the functions which are part of standard Library of C++. There exists many random distribution functions such as 
 * Uniform_int_distribution
 * Uniform_real_distribution
 * normal_ddistribution
 * poission_distribution
- Among them 'normal_distribution' produces more realistic data, hence used
+
+Among them 'normal_distribution' produces more realistic data, hence used
 ***
 ## Data Visualization ##
 To visualize the data sent by pc1(i.e sensor node) stored in the form of point cloud, the Rviz tool is used
