@@ -12,7 +12,7 @@
    	+ [Ubuntu 20.04.6 LTS](#ubuntu-20046-lts)
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
- + [Publisher-Subscriber Model](#publisher-subscriber-model)
+ + [Network Setup](#network-setup)
  + [Server-Client Model](#server-client-model)
  + [Communication Between two PCs](#communication-between-two-pcs)
  + [Data Generation](#data-generation)
