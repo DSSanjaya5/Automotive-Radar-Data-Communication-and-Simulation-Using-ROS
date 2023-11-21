@@ -76,11 +76,27 @@ Wireshark is a network protocol analyzer, or an application that captures packet
 ***
 ## Network Setup ##
 
-![NetworkSetupPC1](https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84)
+<p align="justify">
+The two PCs are interconnected via an Ethernet cable. PC1 and PC2 have been assigned IP addresses of 10.0.0.1 and 10.0.0.2, respectively, and have Netmask values of 255.255.255.0 each. </p>
 
+| PC1                            | PC2                            |
+| ----------------------------------- | ----------------------------------- |
+| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1150a7bd-8498-4e74-bbd8-8dd529448bea.png" width=100% height=100%> |
 
-<img src="(https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84.png" width=50% height=50%>
+#### .bashrc file ####
 
+<p align="justify">
+The .bashrc file serves as a script file that is executed upon user login. It contains a collection of configurations specifically designed for the terminal session.
+Add the lines mentioned below at the end of .bashrc file in PC1 and PC2.</p>
+
+```
+export ROS_MASTER_URI=http://10.0.0.1:11311
+export ROS_IP=10.0.0.1               #For PC2: export ROS_IP=10.0.0.2
+export ROSLAUNCH_SSH_UNKNOWN=1
+export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+ ```
 
 ## Publisher-Subscriber Model ##
 
