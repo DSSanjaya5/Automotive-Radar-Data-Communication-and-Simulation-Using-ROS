@@ -90,8 +90,8 @@ The .bashrc file serves as a script file that is executed upon user login. It co
 Add the lines mentioned below at the end of .bashrc file in PC1 and PC2.</p>
 
 ```
-export ROS_MASTER_URI=http://10.0.0.1:11311
-export ROS_IP=10.0.0.1               #For PC2: export ROS_IP=10.0.0.2
+export ROS_MASTER_URI=http://10.0.0.1:11311           #For PC2, keep this line same
+export ROS_IP=10.0.0.1                                #For PC2: export ROS_IP=10.0.0.2
 export ROSLAUNCH_SSH_UNKNOWN=1
 export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations
 source /opt/ros/noetic/setup.bash
@@ -100,12 +100,23 @@ source ~/catkin_ws/devel/setup.bash
 
 ## Publisher-Subscriber Model ##
 
-![Service-PublisherSubscriber](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac)
+<p align="justify">
+PC1 acts as the publisher in this scenario, while PC2 serves as the subscriber. PC1 is responsible for publishing data by utilizing two .msg files, which are defined as follows:</p>
+
+```
+# location.msg
+float32 radius
+float32 azimuthAngle
+float32 elevationAngle
+ ```
+
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.gif" width="60%" height="10%"/>
 
 ***
 ## Server-Client Model ##
 
-![Service-MultipleServiceClient](https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364)
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="60%" height="10%"/>
+
 ***
 ## Communication Between two PCs ##
 To run the Publisher-Suscriber model or Server-Client model one must set up the network between two PCs. We have used an ethernet cable as a medium of communication between two PCs. Thus enabling complete bi-directional connectivity between the two PCs. We must make sure that each PC advertises itself by a name/IP that the other PC can resolve. We only need one master. All nodes must be configured to use the same master, via ROS_MASTER_URI. Make sure to configure the IP address of the master PC using ROS_IP and ROS_MASTER_URI in the .bashrc file.
