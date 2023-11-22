@@ -20,6 +20,7 @@
  + [Data Generation](#data-generation)
  + [Data Visualization](#data-visualization)
  + [Data Conversions](#data-conversions)
+ + [Hurdles faced](#hurdles-faced)
 </details>
 
 ***
@@ -241,3 +242,9 @@ The data sent by radar sensor is in spherical coordinate system (consisting of r
 * y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
 * z = radius * cos( (PI/180) * (90-elevationAngle))
 
+***
+## Hurdles faced ##
+
+| Issue                           | Solution                           |
+| ----------------------------------- | ----------------------------------- |
+| Couldn’t find python module ‘rosdep2.rospack’| By using commands `sudo apt install python-rosdep` `sudo rosdep init` `rosdep update`|
