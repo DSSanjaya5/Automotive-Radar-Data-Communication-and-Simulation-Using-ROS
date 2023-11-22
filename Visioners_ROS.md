@@ -247,4 +247,21 @@ The data sent by radar sensor is in spherical coordinate system (consisting of r
 
 | Issue                           | Solution                           |
 | ----------------------------------- | ----------------------------------- |
-| Couldn’t find python module ‘rosdep2.rospack’| By using commands `sudo apt install python-rosdep` `sudo rosdep init` `rosdep update`|
+| Couldn’t find python module ‘rosdep2.rospack’| By using commands `sudo apt install python-rosdep`     `sudo rosdep init` `rosdep update`|
+| Understanding of communication protocol  to send and receive data between two nodes| Found solution during weekly discussion|
+| Resolving of host name/IP for communication between two PCs| Using command `export ROS_IP={IP Addr}` `export ROS_MASTER_URI=http://{IP}:11311`|
+| ConnectionRefusedError:Cannot Un-pack non-iterable ConnectionRefused object|This is solved by sourcing the paths and setting the environment variables in env.sh of both the PCs `source /opt/ros/noetic/setup.bash` `source ~/catkin_ws/devel/setup.bash` `export ROS_IP=10.0.0.2` `export ROS_MASTER_URI=http://10.0.0.1:11311` `export ROBOT=PC2` `export ROSLAUNCH_SSH_UNKNOWN=1` `export DISPLAY=:0       #only in PC2`|
+|Error related to SSH|This is solved by executing “sudo apt-get install ssh” on both PCs and then run the following:In PC1 terminal:`ssh 10.0.0.2`In PC2 terminal:`ssh 10.0.0.1`|
+|OGRE Exception(3:RenderingAPI Exception) Unbale to create a suitable GLX Context rviz::RenderSystem:-error creating render window: OGRE Exception|To solve this we reinstalled pcl-conversions and pcl-ROS using the following commands:`sudo apt-get update` `sudo apt-get install ros-noetic-pcl-conversions` `sudo apt-get install ros-noetic-pcl-ros`|
+|Cannot find PC2 remote node|This occurs when X11 forwarding is not enabled with X11DisplayOffset 10 and X11UseLocalhost yes.To solve this run the following command:`sudo nano etc/ssh/sshd_config` And uncomment the lines:`X11 forwarding       yes` `X11DisplayOffset    10` `X11UseLocalhost    yes`|
+
+
+
+
+
+
+
+
+
+
+
