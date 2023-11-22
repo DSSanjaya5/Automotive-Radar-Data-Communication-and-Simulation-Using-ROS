@@ -114,7 +114,7 @@ float32 elevationAngle
 
 ### Flowchart-Publisher ###
 
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.gif" width="60%" height="10%"/>
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a296354-11d6-4d23-a5b7-d46e646c332b.png" width="60%" height="10%"/>
 
 ***
 ## Server-Client Model ##
