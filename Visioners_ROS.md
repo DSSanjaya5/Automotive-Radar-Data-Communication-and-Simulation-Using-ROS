@@ -13,7 +13,9 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
+ + [Publisher-Subscriber Model](#publisher-subscriber-model)
  + [Server-Client Model](#server-client-model)
+ + [WireShark Analysis](#wireshark-analysis)
  + [Communication Between two PCs](#communication-between-two-pcs)
  + [Data Generation](#data-generation)
  + [Data Visualization](#data-visualization)
@@ -41,7 +43,7 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
  - PC1 will send out data to the PC2 (either as ROS topic or Request/Response model) 
  - Data sent out by PC1 contains following data:
  - An array of structures called location_list of size _NUMBER_OF_LOCATIONS_ with structure as shown below
-	```
+   ```
     Single_location:
 		Radius
 		Azimuth angle
@@ -65,7 +67,7 @@ The Robot Operating System (ROS) is a set of software libraries and tools that h
 ## Installation of Softwares ##
 
 #### Ubuntu 20.04.6 LTS ####
-In this hackathon, we use ROS Noetic and it requires Ubuntu 20.04.6 LTS. To download the Ubuntu 20.04.6 LTS iso file [click here](https://releases.ubuntu.com/focal/)
+In this hackathon, we use ROS Noetic and it requires Ubuntu 20.04.6 LTS. To download the Ubuntu 20.04.6 LTS iso file [click here](https://releases.ubuntu.com/focal/).
 
 #### ROS Noetic Ninjemys and RVIZ ####
 For the installation of the ROS Noetic Ninjemys follow the steps provided [here](http://wiki.ros.org/noetic/Installation/Ubuntu). RVIZ (ROS-Visualization) is a standard visualization tool included as part of the ROS ecosystem. So there is no need to install RVIZ separately.
@@ -112,17 +114,56 @@ float32 elevationAngle
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.gif" width="60%" height="10%"/>
 
-### Flowchart-Publisher ###
+### Flowchart ###
 
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a296354-11d6-4d23-a5b7-d46e646c332b.png" width="60%" height="10%"/>
+| Publisher                            | Subscriber                           |
+| ----------------------------------- | ----------------------------------- |
+| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a296354-11d6-4d23-a5b7-d46e646c332b.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/d999c2bc-5390-4ea9-a993-adbf4f69100d.png" width=100% height=100%>|
+
 
 ***
 ## Server-Client Model ##
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="60%" height="10%"/>
 
+### Flowchart ###
+
+| Server                            | Client                           |
+| ----------------------------------- | ----------------------------------- |
+| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/acb8e196-1fba-4650-bece-bc5e164192bc.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a55032a-0c4e-45c3-a778-2c4c90eddd32.png" width=100% height=100%>|
+
 ***
 ## WireShark Analysis ##
+
+Analysis of Transmitted Packets:
+ * Source (PC1) IP – 10.0.0.1
+ * Destination (PC2) IP – 10.0.0.2
+ * For better understanding we have changed the parameter Number_Of_Locations to 1.
+ * The data size in bytes is 20. In which,
+     *	Header size = 8 bytes (IP of PC1 & PC2 4 bytes each)
+     *	Transmitted data size = 12 bytes (3x4 bytes – float32 radius, azimuth angle and elevation angle)
+ * The transmitted data was radius = 2 and the other two values were randomly generated. 
+ * This 4-byte floating-point number will be arranged in little-endian format. A little-endian 00:00:00:40, in decimal is 2.
+
+### Image ###
+
+ * The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.
+ * The data displayed in Wireshark will be in hex, so to convert it into floating values we have used the following command:
+  ```
+   perl -e 'print unpack "f", pack "H*", "940e4b3f";'
+  ``` 
+
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/fa414d69-579d-4cc6-944e-64ed35eef5aa.png" width="60%" height="10%"/>
+
+* The data is converted and has been verified with values –
+   * Radius = 2
+   * Azimuth Angle = -0.68913
+   * Elevation Angle = 27.66571 
+
+Reference:Interpreting floating point numbers from hex values.[click here](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
+
+***
+## Parameter Server ##
 
 
 
