@@ -112,6 +112,24 @@ float32 azimuthAngle
 float32 elevationAngle
  ```
 
+```
+# radar_data.msg
+location[] location_list
+ ```
+
+```
+# radar_data_extension.msg
+location[] location_list
+float32 temperature
+ ```
+
+```
+# radar_data_srv.srv
+
+---
+location[] location_list
+ ```
+
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.gif" width="60%" height="10%"/>
 
 ### Flowchart ###
