@@ -15,12 +15,10 @@
  + [Network Setup](#network-setup)
  + [Publisher-Subscriber Model](#publisher-subscriber-model)
  + [Server-Client Model](#server-client-model)
- + [Difference between Publisher-Subscriber Model and Server-Client Model](#[difference-between-publisher-subscriber-model-and-server-client-model)
- + [WireShark Analysis](#wireshark-analysis)
- + [Communication Between two PCs](#communication-between-two-pcs)
  + [Data Generation](#data-generation)
  + [Data Visualization](#data-visualization)
  + [Data Conversions](#data-conversions)
+ + [WireShark Analysis](#wireshark-analysis)
  + [Hurdles faced](#hurdles-faced)
 </details>
 
@@ -152,8 +150,6 @@ location[] location_list
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/acb8e196-1fba-4650-bece-bc5e164192bc.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a55032a-0c4e-45c3-a778-2c4c90eddd32.png" width=100% height=100%>|
 
-
-
 ***
 ## WireShark Analysis ##
 
@@ -184,34 +180,6 @@ Analysis of Transmitted Packets:
    * Elevation Angle = 27.66571 
 
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
-
-***
-## Parameter Server ##
-
-
-
-## Communication Between two PCs ##
-To run the Publisher-Suscriber model or Server-Client model one must set up the network between two PCs. We have used an ethernet cable as a medium of communication between two PCs. Thus enabling complete bi-directional connectivity between the two PCs. We must make sure that each PC advertises itself by a name/IP that the other PC can resolve. We only need one master. All nodes must be configured to use the same master, via ROS_MASTER_URI. Make sure to configure the IP address of the master PC using ROS_IP and ROS_MASTER_URI in the .bashrc file.
-- Run the following commands in PC1 (Master)
-  ```
-  // Terminal 1 -
-  roscore
-
-  // Terminal 2 -
-  export ROS_IP=10.0.0.1
-  rosrun hackathon pc1
-    
-![Screenshot from 2023-10-16 17-05-37](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/fb6cfb1d-0a62-4223-b071-acf82102de07)
-
-  
-- Run the following commands in PC2
-  ```
-  export ROS_IP=10.0.0.2
-  export ROS_MASTER_URI=http://10.0.0.1:11311
-  rosrun hackathon pc2
-    
-    ```
-![Screenshot from 2023-10-16 17-04-36](https://github.com/DSSanjaya/Visioners_ROS/assets/83591388/007d060a-44d2-4e74-ab06-269975553014)
 
 ***
 ## Data Generation ##
