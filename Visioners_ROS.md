@@ -13,6 +13,7 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
+ + [Algorithm]
  + [Publisher-Subscriber Model](#publisher-subscriber-model)
  + [Server-Client Model](#server-client-model)
  + [Data Generation](#data-generation)
@@ -21,7 +22,7 @@
  + [WireShark Analysis](#wireshark-analysis)
  + [Hurdles faced](#hurdles-faced)
 </details>
-
+italic
 ***
 ## About BITES-BOSCH Hackathon ##
 <p align="justify">
@@ -99,7 +100,39 @@ export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
  ```
+***
+## Algorithm ##
 
+### Data Generation ###
+The sensor data generation can be done by generating points using random number generating functions which are part of standard Library of C++. Some of the random distribution functions are:
+* Uniform_int_distribution
+* Uniform_real_distribution
+* normal_distribution
+* poission_distribution
+  
+The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.
+
+
+## Data Conversions ##
+The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which has tobe transformed into cartesian coordinate system (consisting of x, y and z coordinates) in pc2, this is done using following formulae
+
+* x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
+* y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
+* z = radius * cos( (PI/180) * (90-elevationAngle))
+
+### Data Visualization ###
+To visualize the data sent by pc1(i.e sensor node) stored in the form of point cloud, the Rviz tool is used
+
+Here visulaization of two type of data is done i.e
+1) Data according to range of mid range radars
+2) Points in a Square representing different planes
+
+
+
+ 
+![square](https://github.com/DSSanjaya/Visioners_ROS/assets/83597430/33eedd26-1651-4113-b776-2823a4e725cd)
+
+***
 ## Publisher-Subscriber Model ##
 
 <p align="justify">
@@ -180,38 +213,6 @@ Analysis of Transmitted Packets:
    * Elevation Angle = 27.66571 
 
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
-
-***
-## Data Generation ##
-The sensor data generation can be done in two following ways i.e reading data from a csv file or generating points using random number generator engine, the functions which are part of standard Library of C++. There exists many random distribution functions such as 
-* Uniform_int_distribution
-* Uniform_real_distribution
-* normal_ddistribution
-* poission_distribution
-
-Among them 'normal_distribution' produces more realistic data, hence used
-***
-## Data Visualization ##
-To visualize the data sent by pc1(i.e sensor node) stored in the form of point cloud, the Rviz tool is used
-
-Here visulaization of two type of data is done i.e
-1) Data according to range of mid range radars
-2) Points in a Square representing different planes
-
-
-
- 
-![square](https://github.com/DSSanjaya/Visioners_ROS/assets/83597430/33eedd26-1651-4113-b776-2823a4e725cd)
-
-
-
-***
-## Data Conversions ##
-The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which has tobe transformed into cartesian coordinate system (consisting of x, y and z coordinates) in pc2, this is done using following formulae
-
-* x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
-* y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
-* z = radius * cos( (PI/180) * (90-elevationAngle))
 
 ***
 ## Hurdles faced ##
