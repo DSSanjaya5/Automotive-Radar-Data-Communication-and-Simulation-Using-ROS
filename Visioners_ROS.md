@@ -112,7 +112,7 @@ The sensor data generation can be done in PC1 by generating points using random 
   
 The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.
 
-## Data Conversions ##
+### Data Conversions ###
 The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae
 
 * x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
