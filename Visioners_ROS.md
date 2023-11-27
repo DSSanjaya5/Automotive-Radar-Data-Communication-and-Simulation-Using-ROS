@@ -15,6 +15,7 @@
  + [Network Setup](#network-setup)
  + [Publisher-Subscriber Model](#publisher-subscriber-model)
  + [Server-Client Model](#server-client-model)
+ + [Difference between Publisher-Subscriber Model and Server-Client Model](#[difference-between-publisher-subscriber-model-and-server-client-model)
  + [WireShark Analysis](#wireshark-analysis)
  + [Communication Between two PCs](#communication-between-two-pcs)
  + [Data Generation](#data-generation)
@@ -150,6 +151,8 @@ location[] location_list
 | Server                            | Client                           |
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/acb8e196-1fba-4650-bece-bc5e164192bc.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a55032a-0c4e-45c3-a778-2c4c90eddd32.png" width=100% height=100%>|
+
+
 
 ***
 ## WireShark Analysis ##
