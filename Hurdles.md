@@ -48,6 +48,8 @@ export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations
 
 ## 5] OGRE Exception(3:RenderingAPI Exception) Unbale to create a suitable GLX Context rviz::RenderSystem:-error creating render window: OGRE Exception ##
 To solve this run the following commands:
-`sudo apt-get update`
-`sudo apt-get install ros-noetic-pcl-conversions` 
-`sudo apt-get install ros-noetic-pcl-ros`
+```
+sudo apt-get update
+sudo apt-get install ros-noetic-pcl-conversions
+sudo apt-get install ros-noetic-pcl-ros
+```
