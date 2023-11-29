@@ -16,6 +16,7 @@
  + [Algorithm](#algorithm)
  + [Publisher-Subscriber Model](#publisher-subscriber-model)
  + [Server-Client Model](#server-client-model)
+ + [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
  + [Data Generation](#data-generation)
  + [Data Visualization](#data-visualization)
  + [Data Conversions](#data-conversions)
@@ -175,10 +176,19 @@ location[] location_list
 
 ### Flowchart ###
 
-| Server                            | Client                           |
+| Publisher-Subscriber Model                            | Server-Client Model                           |
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/acb8e196-1fba-4650-bece-bc5e164192bc.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a55032a-0c4e-45c3-a778-2c4c90eddd32.png" width=100% height=100%>|
 
+***
+## Diffference between Publisher-Subscriber Model and Server-Client Model ##
+
+| Server                            | Client                           |
+| ----------------------------------- | ----------------------------------- |
+| Communication is one-to-many (broadcasting). | Communication is one-to-one.|
+| Asynchronous and event-driven. | Synchronous and request-response oriented. |
+| Suitable for continuous data streams, such as sensor data. | Suitable for discrete service requests where a client needs a specific task to be performed.|
+| Useful when multiple nodes need to process the same type of information independently. | Useful for obtaining information or triggering actions with a clear start and end. |
 ***
 ## WireShark Analysis ##
 
