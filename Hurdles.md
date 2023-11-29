@@ -28,7 +28,19 @@ PC1 terminal: `ssh 10.0.0.2`
 
 PC2 terminal: `ssh 10.0.0.1`
 
-## 4] RVIZ not opening
+## 4] Cannot find PC2 remote node:
+This occurs when X11 forwarding is not enabled with X11DisplayOffset 10 and X11UseLocalhost yes.
+To solve this run the following command:
+`sudo nano etc/ssh/sshd_config`
+
+And uncomment the lines:
+```
+X11 forwarding     yes
+X11DisplayOffset   10
+X11UseLocalhost    yes
+```
+
+## 5] PC2 - RVIZ not opening
 #### -Could not connect to display ####
 #### -Could not load the QT platform plugin “xcb” in “ ” even though it was found. ####
 #### -This application failed to start because no QT platform plugin could be initialized. Reinstalling the app may fix the problem. ####
@@ -40,14 +52,13 @@ sudo apt-get install libxkbcommon0
 sudo apt-get install libxkbcommon-x11-0
 ```
 
+## 6] PC2 - OGRE Exception(3:RenderingAPI Exception) Unbale to create a suitable GLX Context rviz::RenderSystem:-error creating render window: OGRE Exception ##
 Reinstall QT if required. Then, in .bashrc add the following
 ```
 export QT_DEBUG_PLUGINS=1
 export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations
 ```
-
-## 5] OGRE Exception(3:RenderingAPI Exception) Unbale to create a suitable GLX Context rviz::RenderSystem:-error creating render window: OGRE Exception ##
-To solve this run the following commands:
+Then, run the following commands
 ```
 sudo apt-get update
 sudo apt-get install ros-noetic-pcl-conversions
