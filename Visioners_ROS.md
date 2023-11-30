@@ -23,7 +23,7 @@
  + [WireShark Analysis](#wireshark-analysis)
  + [Hurdles faced](#hurdles-faced)
 </details>
-italic
+
 ***
 ## About BITES-BOSCH Hackathon ##
 <p align="justify">
