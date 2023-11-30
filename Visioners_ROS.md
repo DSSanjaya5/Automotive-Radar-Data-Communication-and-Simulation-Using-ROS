@@ -183,7 +183,7 @@ location[] location_list
 ***
 ## Diffference between Publisher-Subscriber Model and Server-Client Model ##
 
-| Server                            | Client                           |
+| Publisher-Subscriber                | Server-Client                           |
 | ----------------------------------- | ----------------------------------- |
 | Communication is one-to-many (broadcasting). | Communication is one-to-one.|
 | Asynchronous and event-driven. | Synchronous and request-response oriented. |
