@@ -182,8 +182,6 @@ location[] location_list
 
 ### Demonstration ###
 
-https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/eb0d04b0-86a4-4415-a3cd-3731582bf942
-
 ***
 ## Diffference between Publisher-Subscriber Model and Server-Client Model ##
 
