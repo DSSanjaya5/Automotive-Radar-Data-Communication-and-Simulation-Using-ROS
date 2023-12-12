@@ -13,14 +13,18 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
- + [Algorithm](#algorithm)
- + [Publisher-Subscriber Model](#publisher-subscriber-model)
- + [Server-Client Model](#server-client-model)
- + [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
- + [Data Generation](#data-generation)
- + [Data Visualization](#data-visualization)
- + [Data Conversions](#data-conversions)
- + [WireShark Analysis](#wireshark-analysis)
+ + [Hackathon implementation](#hackathon-implementation)		
+ 	+ [Algorithm](#algorithm)
+ 	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
+ 	+ [Server-Client Model](#server-client-model)
+ 	+ [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
+ 	+ [Data Generation](#data-generation)
+ 	+ [Data Visualization](#data-visualization)
+ 	+ [Data Conversions](#data-conversions)
+ 	+ [WireShark Analysis](#wireshark-analysis)
+  + [Temperature Application](#temperature-application) 
+  + [Hackathon Extension](#hackathon-extension)
+  
 </details>
 
 ***
@@ -101,9 +105,10 @@ source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
  ```
 ***
-## Algorithm ##
+## Hackathon Implementation ##
+### Algorithm ###
 
-### Data Generation ###
+#### Data Generation ####
 The sensor data generation can be done in PC1 by generating points using random number generating functions which are part of standard Library of C++. Some of the random distribution functions are:
 * Uniform_int_distribution
 * Uniform_real_distribution
