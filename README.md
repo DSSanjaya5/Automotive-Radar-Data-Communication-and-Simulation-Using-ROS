@@ -229,5 +229,20 @@ Analysis of Transmitted Packets:
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
 
 ## Temperature Application ##
-
+* Radar gives out its temperature as one of the parameters and according to the datasheet, Bosch's Radar works well enough in the range starting from -40 degree Celsius and going up to 85 degrees Celsius.
+* Initially the radar is set to give 1000 locations under normal temperature which may vary between 21 degrees Celsius to 25 degrees Celsius.
+* To simulate this scenario of varying radar temperature, increase or decrease parameters can be set along with the rate of increase or decrease exponentially using this command.
+* Exponential rate ranges from 0.01 to 0.5
+    ```
+    /Modulate_Temperature increase
+    /Modulate_Temperature decrease
+    /ExpRate {0.01 - 0.5}
+    ```
+* As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed.
+* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed using the following command.
+    ```
+    /RecoverAction 1
+    ```
+* Radar sends DTC(diagnostic trouble code) to the ECU(electronic control unit) and the temperature reduces exponentially. The number of locations given  by the radar remains the same until the hysteresis temperature is reached.
+* When the temperature reaches below the hysteresis temperature then the number of locations increase exponentially till it reaches the maximum location.
 ***
