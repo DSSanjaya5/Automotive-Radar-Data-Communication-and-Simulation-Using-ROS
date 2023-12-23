@@ -232,13 +232,13 @@ Reference: [Interpreting floating point numbers from hex values](https://ask.wir
 * Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.
 * Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.
 * Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.
-* To simulate this scenario of modulating the radar temperature, we use a parameter server called \Modulate_Temperature which varies the temperature exponentially.
+* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.
 * To increase or decrease the temperature use the following commands :
   ```
-   \Modulate_Temperature increase
-   \Modulate_Temperature decrease
+   /Modulate_Temperature increase
+   /Modulate_Temperature decrease
   ```
-* Exponential rate can be set using the command ``` \ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. 
+* Exponential rate can be set using the command ``` /ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. 
 * As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed.
 * Radar sends DTC (Diagnostic Trouble Code) A1000 (Overcooling) or A1001 (Overheating) to the ECU(Electronic Control Unit) ie. PC2.
 * To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.
