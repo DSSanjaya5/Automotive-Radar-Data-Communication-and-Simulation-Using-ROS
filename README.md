@@ -245,7 +245,7 @@ Reference: [Interpreting floating point numbers from hex values](https://ask.wir
     ```
     /RecoverAction 1
     ```
-* By this revover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations sent by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. 
+* By this recover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations sent by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. 
 * After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.
 
 ***
