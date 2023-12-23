@@ -229,20 +229,23 @@ Analysis of Transmitted Packets:
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
 
 ## Temperature Application ##
-* Radar gives out its temperature as one of the parameters and according to the datasheet, Bosch's Radar works well enough in the range starting from -40 degree Celsius and going up to 85 degrees Celsius.
-* Initially the radar is set to give 1000 locations under normal temperature which may vary between 21 degrees Celsius to 25 degrees Celsius.
-* To simulate this scenario of varying radar temperature, increase or decrease parameters can be set along with the rate of increase or decrease exponentially using this command.
-* Exponential rate ranges from 0.01 to 0.5
-    ```
-    /Modulate_Temperature increase
-    /Modulate_Temperature decrease
-    /ExpRate {0.01 - 0.5}
-    ```
+* Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.
+* Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.
+* Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.
+* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.
+* To increase or decrease the temperature use the following commands :
+  ```
+   \Modulate_Temperature increase
+   \Modulate_Temperature decrease
+  ```
+* Exponential rate can be set using the command ``` \ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. 
 * As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed.
-* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed using the following command.
+* Radar sends DTC (Diagnostic Trouble Code) A1000 (Overcooling) or A1001 (Overheating) to the ECU(Electronic Control Unit) ie. PC2.
+* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.
     ```
     /RecoverAction 1
     ```
-* Radar sends DTC(diagnostic trouble code) to the ECU(electronic control unit) and the temperature reduces exponentially. The number of locations given  by the radar remains the same until the hysteresis temperature is reached.
-* When the temperature reaches below the hysteresis temperature then the number of locations increase exponentially till it reaches the maximum location.
+* By this revover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations given by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. 
+* After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.
+
 ***
