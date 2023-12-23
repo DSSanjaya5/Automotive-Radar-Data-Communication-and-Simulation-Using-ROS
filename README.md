@@ -232,7 +232,7 @@ Reference: [Interpreting floating point numbers from hex values](https://ask.wir
 * Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.
 * Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.
 * Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.
-* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.
+* To simulate this scenario of modulating the radar temperature, we use a parameter server called \Modulate_Temperature which varies the temperature exponentially.
 * To increase or decrease the temperature use the following commands :
   ```
    \Modulate_Temperature increase
