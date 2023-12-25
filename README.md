@@ -212,10 +212,10 @@ Analysis of Transmitted Packets:
      *	Transmitted data size = 12 bytes (3x4 bytes – float32 radius, azimuth angle and elevation angle)
  * The transmitted data was radius = 2 and the other two values were randomly generated. 
  * This 4-byte floating-point number will be arranged in little-endian format. A little-endian 00:00:00:40, in decimal is 2.
+ * The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/9c931802-2bf7-4173-aeb4-bf89a09d739e.png" width="60%" height="10%"/>
-
- * The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.
+   
  * The data displayed in Wireshark will be in hex, so to convert it into floating values we have used the following command:
   ```
    perl -e 'print unpack "f", pack "H*", "940e4b3f";'
