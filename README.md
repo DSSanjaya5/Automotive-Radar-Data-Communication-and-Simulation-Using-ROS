@@ -176,6 +176,9 @@ location[] location_list
 ***
 ## Server-Client Model ##
 
+<p align="justify">
+Radar sensor acts as the server node in this scenario, while the ECU serves as the client node. ECU node is requests the radar data from the radar sensor node using the .srv file which contains list of locations and radar temperature. Here, the client node periodically requests for the data from the server node and the server node sends data only when requested.</p>
+
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="60%" height="10%"/>
 
 ### Flowchart ###
