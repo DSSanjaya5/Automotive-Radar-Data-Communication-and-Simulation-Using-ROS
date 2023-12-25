@@ -180,7 +180,7 @@ location[] location_list
 
 ### Flowchart ###
 
-| Publisher-Subscriber Model                            | Server-Client Model                           |
+| Server                           | Client                         |
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/acb8e196-1fba-4650-bece-bc5e164192bc.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a55032a-0c4e-45c3-a778-2c4c90eddd32.png" width=100% height=100%>|
 
