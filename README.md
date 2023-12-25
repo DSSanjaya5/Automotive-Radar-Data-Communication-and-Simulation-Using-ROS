@@ -218,7 +218,7 @@ Analysis of Transmitted Packets:
    
  * The data displayed in Wireshark will be in hex, so to convert it into floating values we have used the following command:
   ```
-   perl -e 'print unpack "f", pack "H*", "940e4b3f";'
+   perl -e 'print unpack "f", pack "H*", "5f53dd41";'
   ``` 
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/fa414d69-579d-4cc6-944e-64ed35eef5aa.png" width="60%" height="10%"/>
