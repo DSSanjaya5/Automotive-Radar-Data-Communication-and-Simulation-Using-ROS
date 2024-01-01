@@ -179,7 +179,7 @@ location[] location_list
 <p align="justify">
 PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
 
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="60%" height="10%"/>
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="70%" height="20%"/>
 
 ### Flowchart:Server Node ###
 
