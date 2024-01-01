@@ -181,11 +181,13 @@ PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="60%" height="10%"/>
 
-### Flowchart ###
+### Flowchart:Server Node ###
 
-| Server                           | Client                         |
-| ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/088c2262-d46f-4fc8-a877-fd2ae7759582.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/7d6f076d-6c41-443e-a9e3-917ed9a7c588.png" width=100% height=100%>|
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/088c2262-d46f-4fc8-a877-fd2ae7759582.png" width="60%" height="10%"/>
+
+### Flowchart:Client Node ###
+
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/7d6f076d-6c41-443e-a9e3-917ed9a7c588.png" width="60%" height="10%"/>
 
 ### Demonstration ###
 
