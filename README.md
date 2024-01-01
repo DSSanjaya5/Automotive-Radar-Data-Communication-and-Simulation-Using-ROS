@@ -207,17 +207,16 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/577317f1-93b6-4915-b
 ***
 ## WireShark Analysis ##
 
-<p align="justify">
-Analysis of Transmitted Packets:</p>
-<p align="justify">* Source (PC1) IP – 10.0.0.1</p>
-<p align="justify"> * Destination (PC2) IP – 10.0.0.2</p>
-<p align="justify"> * For better understanding we have changed the parameter Number_Of_Locations to 1.</p>
-<p align="justify"> * The data size in bytes is 20. In which,</p>
-     <p align="justify">*	Header size = 8 bytes (IP of PC1 & PC2 4 bytes each)</p>
-     <p align="justify">*	Transmitted data size = 12 bytes (3x4 bytes – float32 radius, azimuth angle and elevation angle)</p>
-<p align="justify">* The transmitted data was radius = 2 and the other two values were randomly generated. </p>
-<p align="justify"> * This 4-byte floating-point number will be arranged in little-endian format. A little-endian 00:00:00:40, in decimal is 2.</p>
-<p align="justify"> * The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.</p>
+Analysis of Transmitted Packets:
+* Source (PC1) IP – 10.0.0.1
+* Destination (PC2) IP – 10.0.0.2
+* For better understanding we have changed the parameter Number_Of_Locations to 1.
+* The data size in bytes is 20. In which,
+    *	Header size = 8 bytes (IP of PC1 & PC2 4 bytes each)
+    *	Transmitted data size = 12 bytes (3x4 bytes – float32 radius, azimuth angle and elevation angle)
+* The transmitted data was radius = 2 and the other two values were randomly generated. 
+* This 4-byte floating-point number will be arranged in little-endian format. A little-endian 00:00:00:40, in decimal is 2.
+* The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/9c931802-2bf7-4173-aeb4-bf89a09d739e.png" width="60%" height="10%"/>
    
@@ -228,34 +227,33 @@ Analysis of Transmitted Packets:</p>
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/fa414d69-579d-4cc6-944e-64ed35eef5aa.png" width="60%" height="10%"/>
 
-<p align="justify">
 * The data is converted and has been verified with values –
    * Radius = 2
    * Azimuth Angle = -0.68913
-   * Elevation Angle = 27.66571 </p>
+   * Elevation Angle = 27.66571 
 
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
 
 ## Temperature Application ##
 
-<p align="justify">* Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.</p>
-<p align="justify">* Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.</p>
-<p align="justify">* Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.</p>
-<p align="justify">* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.</p>
-<p align="justify">* To increase or decrease the temperature use the following commands :</p>
+* Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.
+* Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.
+* Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.
+* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.</p
+* To increase or decrease the temperature use the following commands :
   ```
    /Modulate_Temperature increase
    /Modulate_Temperature decrease
   ```
-<p align="justify">* Exponential rate can be set using the command ``` /ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. </p>
-<p align="justify">* As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed.</p>
-<p align="justify">* Radar sends DTC (Diagnostic Trouble Code) A1000 (Overcooling) or A1001 (Overheating) to the ECU(Electronic Control Unit) ie. PC2.</p>
-<p align="justify">* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.</p>
+* Exponential rate can be set using the command ``` /ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. 
+* As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed
+* Radar sends DTC (Diagnostic Trouble Code) A1000 (Overcooling) or A1001 (Overheating) to the ECU(Electronic Control Unit) ie. PC2.
+* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.
     ```
     /RecoverAction 1
     ```
-<p align="justify">* By this recover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations sent by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. </p>
-<p align="justify">* After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.</p>
+* By this recover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations sent by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. 
+* After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.
 
 ### Flowchart ###
 
