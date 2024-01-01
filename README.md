@@ -109,32 +109,29 @@ source ~/catkin_ws/devel/setup.bash
 ### Algorithm ###
 
 #### Data Generation ####
-<p align="justify">
+
 The sensor data generation can be done in PC1 by generating points using random number generating functions which are part of standard Library of C++. Some of the random distribution functions are:
 * Uniform_int_distribution
 * Uniform_real_distribution
 * normal_distribution
-* poission_distribution</p>
+* poission_distribution
 
-<p align="justify">
-The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.</p>
+The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.
 
 ### Data Conversions ###
-<p align="justify">
-The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae</p>
+
+The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae
 
 * x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
 * y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
 * z = radius * cos( (PI/180) * (90-elevationAngle))
 
 ### Data Visualization ###
-<p align="justify">
-To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.</p>
+To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.
 
-<p align="justify">
 Here visulaization of two type of data is done i.e
 1) Data according to range of mid range radars
-2) Points in a Square representing different planes</p>
+2) Points in a Square representing different planes
 
 ![square](https://github.com/DSSanjaya/Visioners_ROS/assets/83597430/33eedd26-1651-4113-b776-2823a4e725cd)
 
