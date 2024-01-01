@@ -170,7 +170,7 @@ location[] location_list
 
 | Publisher                            | Subscriber                           |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a296354-11d6-4d23-a5b7-d46e646c332b.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/d999c2bc-5390-4ea9-a993-adbf4f69100d.png" width=100% height=100%>|
+| <img src="Publisher-Flowchart" src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=100% height=100%> | <img src="Subscriber-Flowchart" src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=100% height=100%>|
 
 
 ***
@@ -185,7 +185,7 @@ PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
 
 | Server                           | Client                         |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/acb8e196-1fba-4650-bece-bc5e164192bc.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5a55032a-0c4e-45c3-a778-2c4c90eddd32.png" width=100% height=100%>|
+| <img src="Server-Flowchart" src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/088c2262-d46f-4fc8-a877-fd2ae7759582.png" width=100% height=100%> | <img src="Client-Flowchart" src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/7d6f076d-6c41-443e-a9e3-917ed9a7c588.png" width=100% height=100%>|
 
 ### Demonstration ###
 
@@ -255,6 +255,6 @@ Reference: [Interpreting floating point numbers from hex values](https://ask.wir
 
 | PC1                           | PC2                           |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/2b197e67-5dbf-4e18-bf53-a7360e1e9a46.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/5b42083b-d765-48be-868b-15bd2830e912.png" width=100% height=100%>|
+| <img src="PC1-Flowchart" src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/af42a826-7ba2-4332-a711-5658aeef4484.png" width=100% height=100%> | <img src="PC2-Flowchart" src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/4ba25dba-4d7f-482a-9930-4e4590d0ec93.png" width=100% height=100%>|
 
 ***
