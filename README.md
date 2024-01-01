@@ -189,7 +189,7 @@ PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
 
 ### Demonstration ###
 
-https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/b53fdeeb-c6f9-412b-b13a-9823370c814b
+https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/577317f1-93b6-4915-b73d-ab3bcd5d93a7
   
 ***
 ## Diffference between Publisher-Subscriber Model and Server-Client Model ##
