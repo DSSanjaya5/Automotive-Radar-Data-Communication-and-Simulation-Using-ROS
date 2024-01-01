@@ -168,7 +168,7 @@ location[] location_list
 
 ### Flowchart ###
 
-| Publisher Node                  | Subscriber Node                     |
+| Publisher Node                | Subscriber Node                     |
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=100% height=100%> |
 
@@ -182,7 +182,7 @@ PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
 
 ### Flowchart ###
 
-| Server Node                     | Client Node                     |
+| Server Node                   | Client Node                     |
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/088c2262-d46f-4fc8-a877-fd2ae7759582.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/7d6f076d-6c41-443e-a9e3-917ed9a7c588.png" width=100% height=100%> |
 
