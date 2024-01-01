@@ -109,27 +109,32 @@ source ~/catkin_ws/devel/setup.bash
 ### Algorithm ###
 
 #### Data Generation ####
+<p align="justify">
 The sensor data generation can be done in PC1 by generating points using random number generating functions which are part of standard Library of C++. Some of the random distribution functions are:
 * Uniform_int_distribution
 * Uniform_real_distribution
 * normal_distribution
-* poission_distribution
-  
-The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.
+* poission_distribution</p>
+
+<p align="justify">
+The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.</p>
 
 ### Data Conversions ###
-The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae
+<p align="justify">
+The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae</p>
 
 * x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
 * y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
 * z = radius * cos( (PI/180) * (90-elevationAngle))
 
 ### Data Visualization ###
-To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.
+<p align="justify">
+To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.</p>
 
+<p align="justify">
 Here visulaization of two type of data is done i.e
 1) Data according to range of mid range radars
-2) Points in a Square representing different planes
+2) Points in a Square representing different planes</p>
 
 ![square](https://github.com/DSSanjaya/Visioners_ROS/assets/83597430/33eedd26-1651-4113-b776-2823a4e725cd)
 
@@ -202,6 +207,7 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/577317f1-93b6-4915-b
 ***
 ## WireShark Analysis ##
 
+<p align="justify">
 Analysis of Transmitted Packets:
  * Source (PC1) IP – 10.0.0.1
  * Destination (PC2) IP – 10.0.0.2
@@ -211,7 +217,7 @@ Analysis of Transmitted Packets:
      *	Transmitted data size = 12 bytes (3x4 bytes – float32 radius, azimuth angle and elevation angle)
  * The transmitted data was radius = 2 and the other two values were randomly generated. 
  * This 4-byte floating-point number will be arranged in little-endian format. A little-endian 00:00:00:40, in decimal is 2.
- * The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.
+ * The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.</p>
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/9c931802-2bf7-4173-aeb4-bf89a09d739e.png" width="60%" height="10%"/>
    
@@ -222,33 +228,36 @@ Analysis of Transmitted Packets:
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/fa414d69-579d-4cc6-944e-64ed35eef5aa.png" width="60%" height="10%"/>
 
-
+<p align="justify">
 * The data is converted and has been verified with values –
    * Radius = 2
    * Azimuth Angle = -0.68913
-   * Elevation Angle = 27.66571 
+   * Elevation Angle = 27.66571 </p>
 
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
 
 ## Temperature Application ##
+<p align="justify">
 * Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.
 * Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.
 * Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.
 * To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.
-* To increase or decrease the temperature use the following commands :
+* To increase or decrease the temperature use the following commands :</p>
   ```
    /Modulate_Temperature increase
    /Modulate_Temperature decrease
   ```
+<p align="justify">
 * Exponential rate can be set using the command ``` /ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. 
 * As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed.
 * Radar sends DTC (Diagnostic Trouble Code) A1000 (Overcooling) or A1001 (Overheating) to the ECU(Electronic Control Unit) ie. PC2.
-* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.
+* To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.</p>
     ```
     /RecoverAction 1
     ```
+<p align="justify">
 * By this recover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations sent by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. 
-* After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.
+* After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.</p>
 
 ### Flowchart ###
 
