@@ -130,7 +130,10 @@ To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian c
 Here visulaization of two type of data is done i.e
 1) Data according to range of mid range radars
 2) Points in a Square representing different planes
- 
+
+ <p align="center">
+  <img width="460" height="300" src="https://picsum.photos/460/300">
+</p>
 ![square](https://github.com/DSSanjaya/Visioners_ROS/assets/83597430/33eedd26-1651-4113-b776-2823a4e725cd)
 
 ***
