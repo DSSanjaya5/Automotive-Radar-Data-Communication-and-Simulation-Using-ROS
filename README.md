@@ -166,12 +166,13 @@ location[] location_list
 
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.gif" width="60%" height="10%"/>
 
-### Flowchart ###
+### Flowchart:Publisher Node ###
 
-| Publisher                            | Subscriber                           |
-| ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=100% height=100%>|
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width="70%" height="30%"/>
 
+### Flowchart:Subscriber Node ###
+
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width="70%" height="30%"/>
 
 ***
 ## Server-Client Model ##
@@ -187,7 +188,7 @@ PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
 
 ### Flowchart:Client Node ###
 
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/7d6f076d-6c41-443e-a9e3-917ed9a7c588.png" width="60%" height="10%"/>
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/7d6f076d-6c41-443e-a9e3-917ed9a7c588.png" width="70%" height="30%"/>
 
 ### Demonstration ###
 
