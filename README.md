@@ -88,7 +88,7 @@ The two PCs are interconnected via an Ethernet cable. PC1 and PC2 have been assi
 
 | PC1                            | PC2                            |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84.png" width=240.1px height=194.06px> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1150a7bd-8498-4e74-bbd8-8dd529448bea.png" width=240.1px height=194.06px> |
+| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1150a7bd-8498-4e74-bbd8-8dd529448bea.png" width=100% height=100%> |
 
 #### .bashrc file ####
 
@@ -172,7 +172,7 @@ location[] location_list
 
 | Publisher Node              | Subscriber Node                     |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=100% height=100%> |
+| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=240.1px height=194.06px> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=240.1px height=194.06px> |
 
 ### Demonstration ###
 
