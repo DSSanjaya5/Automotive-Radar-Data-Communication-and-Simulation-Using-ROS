@@ -1,3 +1,0 @@
-float32 radius
-float32 azimuthAngle
-float32 elevationAngle
