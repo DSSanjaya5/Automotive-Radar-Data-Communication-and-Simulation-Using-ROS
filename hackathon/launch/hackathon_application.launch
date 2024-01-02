@@ -1,0 +1,24 @@
+<!-- ROS_hackathon.launch -->
+
+<launch>
+    <arg name="ip1" default="10.3.3.114" />
+    <arg name="ip2" default="10.3.3.191" />
+    <arg name="pass" default="nvidia@1234" />
+    <arg name="env1" default="/home/user/catkin_ws/devel/env.sh" />
+    <arg name="env2" default="/home/user/catkin_ws/devel/env.sh" />
+    <param name="ROS_MASTER_URI" value="http://$(arg ip1):11311" />
+    <param name="ROS_IP" value="$(arg ip1)" />
+
+    <group>
+            <machine name="PC2" address="$(arg ip2)" password="$(arg pass)" env-loader="$(arg env2)"/>
+            <node machine="PC2" pkg="hackathon" type="pc2_application" name="pc2_application" output="screen" launch-prefix="xterm -e"/>
+            <node machine="PC2" pkg="rviz" type="rviz" name="rviz" args="-d $(find hackathon)/rviz/radar.rviz" output="screen" />
+    </group>
+    
+    <group>
+    	    <machine name="PC1" address="$(arg ip1)" env-loader="$(arg env1)"/>
+	    <node machine="PC1" pkg="hackathon" type="pc1_application" name="pc1_application" output="screen" launch-prefix="xterm -e"/>
+            <!--node machine="PC1" type="rviz" name="rviz1" pkg="rviz" args="-d $(find hackathon)/rviz/radar.rviz" /-->
+    </group>
+    
+</launch>
