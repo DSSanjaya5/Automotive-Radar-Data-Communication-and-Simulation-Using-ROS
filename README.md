@@ -172,7 +172,7 @@ location[] location_list
 
 | Publisher Node              | Subscriber Node                     |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=480.2px height=388.12px> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=480.2px height=388.12px> |
+| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=100% height=100%> |
 
 ### Demonstration ###
 
