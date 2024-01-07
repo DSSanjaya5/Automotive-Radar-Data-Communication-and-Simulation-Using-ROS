@@ -13,12 +13,12 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
- + <details> 
- 	<summary> 
-	 
+ + <details> <summary> 
+		
 	[Hackathon implementation](#hackathon-implementation) 
 
 	</summary>
+ 
 	+ [Algorithm](#algorithm)
  	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
 	+ [Server-Client Model](#server-client-model)
