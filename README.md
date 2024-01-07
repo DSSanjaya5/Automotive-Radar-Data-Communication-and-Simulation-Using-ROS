@@ -23,7 +23,7 @@
  	+ [Data Conversions](#data-conversions)
  	+ [WireShark Analysis](#wireshark-analysis)
   + [Temperature Application](#temperature-application) 
-  + [Hackathon Extension](#hackathon-extension)
+  + [Integration of the framework with Gazebo](#integration_of_the_framework_with_gazebo)
   
 </details>
 
@@ -268,5 +268,8 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a
 | PC1 Node                            | PC2 Node                            |
 | ----------------------------------- | ----------------------------------- |
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/af42a826-7ba2-4332-a711-5658aeef4484.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/4ba25dba-4d7f-482a-9930-4e4590d0ec93.png" width=100% height=100%>|
+
+
+## Integration of the framework with Gazebo ##
 
 ***
