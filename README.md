@@ -13,17 +13,15 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
- + <details open>
-	<summary> [Hackathon implementation](#hackathon-implementation)	</summary>
- 		+ [Algorithm](#algorithm)
- 		+ [Publisher-Subscriber Model](#publisher-subscriber-model)
-		+ [Server-Client Model](#server-client-model)
-		+ [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
- 		+ [Data Generation](#data-generation)
- 		+ [Data Visualization](#data-visualization)
-		+ [Data Conversions](#data-conversions)
- 		+ [WireShark Analysis](#wireshark-analysis)
-    </details>
+ + [Hackathon implementation](#hackathon-implementation)	
+	+ [Algorithm](#algorithm)
+ 	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
+	+ [Server-Client Model](#server-client-model)
+  	+ [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
+ 	+ [Data Generation](#data-generation)
+ 	+ [Data Visualization](#data-visualization)
+	+ [Data Conversions](#data-conversions)
+ 	+ [WireShark Analysis](#wireshark-analysis)
   + [Temperature Application](#temperature-application) 
   + [Integration of the framework with Gazebo](#integration-of-the-framework-with-gazebo)
   
