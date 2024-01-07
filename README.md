@@ -13,9 +13,9 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
- + <details> <summary> Hackathon </summary>
+ + <details> <summary> Hackathon Implementation </summary>
    
- 	[Hackathon implementation](#hackathon-implementation) 
+ 	[Hackathon Implementation](#hackathon-implementation) 
   
 	+ [Algorithm](#algorithm)
 	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
