@@ -23,7 +23,7 @@
  	+ [Data Conversions](#data-conversions)
  	+ [WireShark Analysis](#wireshark-analysis)
   + [Temperature Application](#temperature-application) 
-  + [Integration of the framework with Gazebo](#integration_of_the_framework_with_gazebo)
+  + [Integration of the framework with Gazebo](#integration-of-the-framework-with-gazebo)
   
 </details>
 
