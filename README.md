@@ -6,7 +6,6 @@
 	
  + [About BITES-BOSCH Hackathon](#about-bites-bosch-hackathon)
  + [Problem Statement ROS](#problem-statement---ros)
- + [Introduction](#introduction)
  + [Installation of Softwares](#installation-of-softwares)
  + [Network Setup](#network-setup)
  + [Hackathon Implementation](#hackathon-implementation)
@@ -23,20 +22,15 @@
 ***
 ## About BITES-BOSCH Hackathon ##
 <p align="justify">
-BITES-Bosch hackathon is an excellent opportunity for the students of BITES Member Institutions to apply their knowledge, collaborate with like-minded individuals, and create practical solutions in the field of robotics and computer vision. </p>
-
+BITES-Bosch hackathon is an excellent opportunity for the students of BITES Member Institutions to apply their knowledge, collaborate with like-minded individuals, and create practical solutions in the field of robotics and computer vision. </p>  
 Hackathon Themes:
 
-• Image Processing – Pixel Quest
-
+• Image Processing – Pixel Quest  
 • ROS – RoboHive: Unleashing the power of ROS
-<p align="justify">
-This hackathon is a collective event where the students come together to work on projects and challenges related to image analysis, computer vision and challenges related to robotics using the ROS framework. These events often foster a sense of community and excitement among participants, inspiring them to further explore the potential of ROS and image processing in robotics applications. </p>
 
 ***
 ## Problem Statement - ROS ##
-Using ROS, Build a two-PC communication model that will acheive the following 
-
+Using ROS, Build a two-PC communication model that will acheive the following  
 We define 2 PCs(Linux Machines) as follows: PC1 and PC2 
  - PC1 will send out data to the PC2 (either as ROS topic or Request/Response model) 
  - Data sent out by PC1 contains following data:
@@ -47,7 +41,6 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
 		Azimuth angle
 		Elevation angle
     ```
-
  - The data from PC1 must be sent cyclically( period can be defined by the teams, suggest to keep the period within 1 second)
  - Verify the published data using Wireshark tool.
  - PC1 must process data as per the designed algorithm
@@ -56,11 +49,6 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
 	* Hint : Teams are free to look up open source and understand.
    * Double-Hint : *Pcl-classes*
  - Once conversion is done, another topic of the type as described above must be published and using RVIZ, it must be visualized
-***
-## Introduction ##
-<p align="justify">
-The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. ROS is neither a framework of libraries nor an operating system, thus it is known as a *Middleware* or a *Meta Operating System*. </p>
-
 ***
 ## Installation of Softwares ##
 
@@ -111,7 +99,7 @@ The sensor data generation can be done in PC1 by generating points using random 
 
 The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.
 
-### Data Conversions ###
+#### Data Conversions ####
 
 The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae
 
@@ -119,7 +107,7 @@ The data sent by radar sensor is in spherical coordinate system (consisting of r
 * y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
 * z = radius * cos( (PI/180) * (90-elevationAngle))
 
-### Data Visualization ###
+#### Data Visualization ####
 To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.
 
 Here visulaization of two type of data is done i.e
