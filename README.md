@@ -13,7 +13,7 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
- + <details> <summary> 
+	<details> <summary> 
 		
 	[Hackathon implementation](#hackathon-implementation) 
 
