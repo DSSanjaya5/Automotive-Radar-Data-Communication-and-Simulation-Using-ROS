@@ -13,16 +13,16 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
- <details> <summary> 
+ + <details> <summary>
 		
- [Hackathon implementation](#hackathon-implementation) 
+	 [Hackathon implementation](#hackathon-implementation) 
 
-  </summary>
+ 	 </summary>
  
-+ [Algorithm](#algorithm)
-+ [Publisher-Subscriber Model](#publisher-subscriber-model)
-+ [Server-Client Model](#server-client-model)
-  + [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
+	+ [Algorithm](#algorithm)
+	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
+	+ [Server-Client Model](#server-client-model)
+  	+ [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
  	+ [Data Generation](#data-generation)
  	+ [Data Visualization](#data-visualization)
 	+ [Data Conversions](#data-conversions)
@@ -31,6 +31,7 @@
    </details>
   + [Temperature Application](#temperature-application) 
   + [Integration of the framework with Gazebo](#integration-of-the-framework-with-gazebo)
+  + [About Us](#about-us)
   
 </details>
 
@@ -278,5 +279,8 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a
 
 
 ## Integration of the framework with Gazebo ##
+
+
+## About Us ##
 
 ***
