@@ -8,23 +8,12 @@
  + [Problem Statement ROS](#problem-statement---ros)
  + [Introduction](#introduction)
  + [Installation of Softwares](#installation-of-softwares)
-   	+ [Ubuntu 20.04.6 LTS](#ubuntu-20046-lts)
-   	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
-   	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
  + [Hackathon Implementation](#hackathon-implementation)
-   <details> <summary> Contents </summary>
-  
 	+ [Algorithm](#algorithm)
 	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
 	+ [Server-Client Model](#server-client-model)
-  	+ [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
- 	+ [Data Generation](#data-generation)
- 	+ [Data Visualization](#data-visualization)
-	+ [Data Conversions](#data-conversions)
  	+ [WireShark Analysis](#wireshark-analysis)
-    
-   </details>
   + [Temperature Application](#temperature-application) 
   + [Integration of the framework with Gazebo](#integration-of-the-framework-with-gazebo)
   + [About Us](#about-us)
