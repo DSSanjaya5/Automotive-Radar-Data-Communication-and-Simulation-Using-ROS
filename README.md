@@ -69,7 +69,7 @@ The two PCs are interconnected via an Ethernet cable. PC1 and PC2 have been assi
 
 | PC1                            | PC2                            |
 | ----------------------------------- | ----------------------------------- |
-| <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1150a7bd-8498-4e74-bbd8-8dd529448bea.png" width=100% height=100%> |
+|<p align="center"> <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0598790e-eeb5-429d-a4ea-71e9c1e49a84.png" width=70% height=70%> </p>|<p align="center"> <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1150a7bd-8498-4e74-bbd8-8dd529448bea.png" width=70% height=70%> </p>|
 
 #### .bashrc file ####
 
@@ -92,16 +92,16 @@ source ~/catkin_ws/devel/setup.bash
 #### Data Generation ####
 
 The sensor data generation can be done in PC1 by generating points using random number generating functions which are part of standard Library of C++. Some of the random distribution functions are:
-* Uniform_int_distribution
 * Uniform_real_distribution
 * normal_distribution
 * poission_distribution
 
-The  ***central limit theorem***  states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the  ***normal_distribution***  a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios.
+<p align="justify">
+The <i><b>central limit theorem</b></i> states that the sum (or average) of a large number of independent and identically distributed random variables, regardless of their original distribution, will be approximately _normally_ distributed. This makes the <i><b>normal_distribution</b></i> a natural choice for modeling the distribution of the RADAR points, which is often the case in real-world scenarios. </p>
 
 #### Data Conversions ####
 
-The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae
+The data sent by radar sensor is in spherical coordinate system (consisting of radius, azimuthal angle and elevation angle), which must be transformed into cartesian coordinate system (consisting of x, y and z coordinates) in PC2, this is done using following formulae:
 
 * x = radius * sin( (PI/180) * (90-elevationAngle)) * cos( (PI/180) * azimuthAngle)
 * y = radius * sin( (PI/180) * (90-elevationAngle)) * sin( (PI/180) * azimuthAngle) 
