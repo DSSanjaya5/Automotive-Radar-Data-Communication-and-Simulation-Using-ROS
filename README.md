@@ -14,9 +14,8 @@
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
  + <details> 
-	 <summary> 
+	  
 	[Hackathon implementation](#hackathon-implementation) 
-	 </summary>
 	 
 	+ [Algorithm](#algorithm)
  	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
@@ -26,6 +25,7 @@
  	+ [Data Visualization](#data-visualization)
 	+ [Data Conversions](#data-conversions)
  	+ [WireShark Analysis](#wireshark-analysis)
+    
    </details>
   + [Temperature Application](#temperature-application) 
   + [Integration of the framework with Gazebo](#integration-of-the-framework-with-gazebo)
