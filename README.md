@@ -13,16 +13,16 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
-	<details> <summary> 
+ <details> <summary> 
 		
-	[Hackathon implementation](#hackathon-implementation) 
+ [Hackathon implementation](#hackathon-implementation) 
 
-	</summary>
+  </summary>
  
-	+ [Algorithm](#algorithm)
- 	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
-	+ [Server-Client Model](#server-client-model)
-  	+ [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
++ [Algorithm](#algorithm)
++ [Publisher-Subscriber Model](#publisher-subscriber-model)
++ [Server-Client Model](#server-client-model)
+  + [Diffference between Publisher-Subscriber Model and Server-Client Model](#diffference-between-publisher-subscriber-model-and-server-client-model)
  	+ [Data Generation](#data-generation)
  	+ [Data Visualization](#data-visualization)
 	+ [Data Conversions](#data-conversions)
