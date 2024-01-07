@@ -13,11 +13,8 @@
    	+ [ROS Noetic & RVIZ](#ros-noetic-ninjemys-and-rviz)
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
-    <details>
-    <summary>head 1.1</summary>
-    content
-    </details>
- + [Hackathon implementation](#hackathon-implementation)		
+ + <details>
+    <summary> [Hackathon implementation](#hackathon-implementation) </summary>	
  	+ [Algorithm](#algorithm)
  	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
  	+ [Server-Client Model](#server-client-model)
@@ -26,6 +23,7 @@
  	+ [Data Visualization](#data-visualization)
  	+ [Data Conversions](#data-conversions)
  	+ [WireShark Analysis](#wireshark-analysis)
+    </details>
   + [Temperature Application](#temperature-application) 
   + [Integration of the framework with Gazebo](#integration-of-the-framework-with-gazebo)
   
