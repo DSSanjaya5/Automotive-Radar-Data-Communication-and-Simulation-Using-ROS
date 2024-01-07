@@ -2,9 +2,8 @@
 	<h1> BITES-BOSCH Hackathon 2023 </h1> 
 	<h1> Team Visioners </h1> 
 </div>
-<details open>
-<summary> <h3> Table of Contents </h3></summary>
-
+<details open> <summary> <h3> Table of Contents </h3></summary>
+	
  + [About BITES-BOSCH Hackathon](#about-bites-bosch-hackathon)
  + [Problem Statement ROS](#problem-statement---ros)
  + [Introduction](#introduction)
