@@ -14,7 +14,9 @@
    	+ [Wireshark](#wireshark)
  + [Network Setup](#network-setup)
  + <details> 
-	 <summary> [Hackathon implementation](#hackathon-implementation) </summary>
+	 <summary> 
+	[Hackathon implementation](#hackathon-implementation) 
+	 </summary>
 	 
 	+ [Algorithm](#algorithm)
  	+ [Publisher-Subscriber Model](#publisher-subscriber-model)
