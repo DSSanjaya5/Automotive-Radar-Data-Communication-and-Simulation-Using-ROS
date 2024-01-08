@@ -254,7 +254,7 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a
 
 ## About Us ##
 
-<a href="https://www.linkedin.com/in/dssanjaya/"><img align="left" src="https://img.shields.io/badge/linkedin-%230077B5.svg" alt="icon | LinkedIn" width="100px"/></a>
+<a href="https://www.linkedin.com/in/dssanjaya/"><img align="left" src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo.png" alt="icon | LinkedIn" width="100px"/></a>
 
 <a href="https://www.linkedin.com/in/dssanjaya/"><img align="left" src="https://img.shields.io/badge/linkedin-%230077B5.svg" alt="icon | LinkedIn" width="100px"/></a>
 ***
