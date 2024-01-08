@@ -50,6 +50,7 @@ We define 2 PCs(Linux Machines) as follows: PC1 and PC2
 	* Hint : Teams are free to look up open source and understand.
    * Double-Hint : *Pcl-classes*
  - Once conversion is done, another topic of the type as described above must be published and using RVIZ, it must be visualized
+
 ***
 ## Installation of Softwares ##
 
@@ -86,8 +87,10 @@ export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/xcbglintegrations
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
  ```
+
 ***
 ## Hackathon Implementation ##
+
 ### Algorithm ###
 
 #### Data Generation ####
@@ -110,12 +113,6 @@ The data sent by radar sensor is in spherical coordinate system (consisting of r
 
 #### Data Visualization ####
 To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.
-
-Here visulaization of two type of data is done i.e
-1) Data according to range of mid range radars
-2) Points in a Square representing different planes
-
-![square](https://github.com/DSSanjaya/Visioners_ROS/assets/83597430/33eedd26-1651-4113-b776-2823a4e725cd)
 
 ***
 ## Publisher-Subscriber Model ##
@@ -148,8 +145,6 @@ float32 temperature
 location[] location_list
  ```
 
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/ee86fc03-9d4d-4f51-b22e-b1f1091fc4ac.gif" width="60%" height="10%"/>
-
 ### Flowchart ###
 
 | Publisher Node              | Subscriber Node                     |
@@ -165,8 +160,6 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1b623628-bf2f-4b98-a
 
 <p align="justify">
 PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
-
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/83571032/5bc4e887-e3f2-471d-91cb-a23613a57364.gif" width="60%" height="10%"/>
 
 ### Flowchart ###
 
@@ -187,6 +180,7 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/49470acc-beef-4399-9
 | Asynchronous and event-driven. | Synchronous and request-response oriented. |
 | Suitable for continuous data streams, such as sensor data. | Suitable for discrete service requests where a client needs a specific task to be performed.|
 | Useful when multiple nodes need to process the same type of information independently. | Useful for obtaining information or triggering actions with a clear start and end. |
+
 ***
 ## WireShark Analysis ##
 
@@ -199,16 +193,19 @@ Analysis of Transmitted Packets:
     *	Transmitted data size = 12 bytes (3x4 bytes – float32 radius, azimuth angle and elevation angle)
 * The transmitted data was radius = 2 and the other two values were randomly generated. 
 * This 4-byte floating-point number will be arranged in little-endian format. A little-endian 00:00:00:40, in decimal is 2.
-* The orange box, yellow box and red box represents radius, azimuth angle and elevation angle.
+* The orange box, yellow box and red box represents radius, azimuth angle and elevation angle respectively.
 
+<p align="center">
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/9c931802-2bf7-4173-aeb4-bf89a09d739e.png" width="60%" height="10%"/>
-   
+</p> 
+
  * The data displayed in Wireshark will be in hex, so to convert it into floating values we have used the following command:
   ```
    perl -e 'print unpack "f", pack "H*", "5f53dd41";'
   ``` 
-
+<p align="center">
 <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/fa414d69-579d-4cc6-944e-64ed35eef5aa.png" width="60%" height="10%"/>
+</p>
 
 * The data is converted and has been verified with values –
    * Radius = 2
@@ -218,8 +215,9 @@ Analysis of Transmitted Packets:
 Reference: [Interpreting floating point numbers from hex values](https://ask.wireshark.org/question/29733/interpreting-floating-point-numbers-from-hex-values/).
 
 ***
-
-## Dataset ##
+## Testing with Astyx HiRes2019 Dataset ##
+To test the designed framework of communication between two PCs using ROS, we have used the Astyx HiRes2019 Dataset. The Astyx HiRes2019 dataset has 546 entries (from 0 to 545) and around
+1,000 radar points per frame. Each entry has lidar, radar, camera, calibration data. Its radar data includes x, y, z, radial velocity and intensity. We have converted the cartesian coordinates to spherical coordinates and have saved the data in .csv format. [Click here](https://github.com/DSSanjaya/Visioners_ROS/tree/main/hackathon/Radar_Dataset) to see the radar dataset. Camera visualiztion of the dataset can be seen [here](https://videos.ctfassets.net/95kuvdv8zn1v/1v9GXArq9zPaNQtJy7A0go/231c3bbe4165c56682fb5db59eca9843/Complex_Bus_2x.mp4).
 
 https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a184-715cdc2b70a8
 
