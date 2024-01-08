@@ -92,7 +92,7 @@ source ~/catkin_ws/devel/setup.bash
 #### Data Generation ####
 
 The sensor data generation can be done in PC1 by generating points using random number generating functions which are part of standard Library of C++. Some of the random distribution functions are:
-* Uniform_real_distribution
+* uniform_real_distribution
 * normal_distribution
 * poission_distribution
 
