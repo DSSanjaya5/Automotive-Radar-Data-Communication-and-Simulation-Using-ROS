@@ -216,8 +216,7 @@ Reference: [Interpreting floating point numbers from hex values](https://ask.wir
 
 ***
 ## Testing with Astyx HiRes2019 Dataset ##
-To test the designed framework of communication between two PCs using ROS, we have used the Astyx HiRes2019 Dataset. The Astyx HiRes2019 dataset has 546 entries (from 0 to 545) and around
-1,000 radar points per frame. Each entry has lidar, radar, camera, calibration data. Its radar data includes x, y, z, radial velocity and intensity. We have converted the cartesian coordinates to spherical coordinates and have saved the data in .csv format. [Click here](https://github.com/DSSanjaya/Visioners_ROS/tree/main/hackathon/Radar_Dataset) to see the radar dataset. Camera visualiztion of the dataset can be seen [here](https://videos.ctfassets.net/95kuvdv8zn1v/1v9GXArq9zPaNQtJy7A0go/231c3bbe4165c56682fb5db59eca9843/Complex_Bus_2x.mp4).
+To test the designed framework of communication between two PCs using ROS, we have used the [Astyx HiRes2019 Dataset](https://github.com/under-the-radar/radar_dataset_astyx). The Astyx HiRes2019 dataset has 546 entries (from 0 to 545) and around 1,000 radar points per frame. Each entry has lidar, radar, camera, calibration data. Its radar data includes x, y, z, radial velocity and intensity. We have converted the cartesian coordinates to spherical coordinates and have saved the data in .csv format. [Click here](https://github.com/DSSanjaya/Visioners_ROS/tree/main/hackathon/Radar_Dataset) to see the radar dataset. Camera visualiztion of the dataset can be seen [here](https://videos.ctfassets.net/95kuvdv8zn1v/1v9GXArq9zPaNQtJy7A0go/231c3bbe4165c56682fb5db59eca9843/Complex_Bus_2x.mp4).
 
 https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a184-715cdc2b70a8
 
