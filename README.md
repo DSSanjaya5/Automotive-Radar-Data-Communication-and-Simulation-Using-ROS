@@ -233,16 +233,16 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a
 * To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.</p
 * To increase or decrease the temperature use the following commands :
   ```
-   /Modulate_Temperature increase
-   /Modulate_Temperature decrease
+   rosparam set /Modulate_Temperature increase
+   rosparam set /Modulate_Temperature decrease
   ```
 * Exponential rate can be set using the command ``` /ExpRate <value> ``` and the value can be from 0.01 to 0.5 and if the input goes beyond the expected value we saturate the exponential rate by setting it to min or max based on the input. 
 * As the radar temperature goes beyond the optimal temperature range, transmission of the number of locations reduces by half and cuts off transmission of other parameters like speed
 * Radar sends DTC (Diagnostic Trouble Code) A1000 (Overcooling) or A1001 (Overheating) to the ECU(Electronic Control Unit) ie. PC2.
 * To overcome this situation of overheating or overcooling of radar temperature a recovery action has to be performed at PC2 using the following command.
-    ```
-    /RecoverAction 1
-    ```
+  ```
+    rosparam set /RecoverAction 1
+  ```
 * By this recover action the temperature starts to decrease/increase exponentially based on DTC and the Number_Of_Locations sent by the radar remains the same until the hysteresis temperature (ie. Max_Temp - 15 or Min_Temp + 15) is reached. 
 * After crossing the hysteresis temperature the Number_Of_Locations starts to increase exponentially till it reaches *Max_Loc*.
 
