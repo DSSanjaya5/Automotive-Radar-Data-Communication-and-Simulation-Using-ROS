@@ -152,7 +152,7 @@ location[] location_list
 | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0ef188cc-2492-4e80-8b7c-f4b6f2e91a37.png" width=100% height=100%> | <img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/c3cada90-f7e6-4c75-b2a9-79002a8df1d0.png" width=100% height=100%> |
 
 <p align="center">
-<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/273a4e83-8d20-4cd4-a72b-28f91e11a105.png" width="60%" height="10%"/>
+<img src="https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/0b876731-1157-451e-b5b6-33ae1c0252f4.png" width="60%" height="40%"/>
 </p> 
 
 ### Demonstration ###
