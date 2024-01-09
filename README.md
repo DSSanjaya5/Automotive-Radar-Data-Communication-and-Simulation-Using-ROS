@@ -114,6 +114,13 @@ The data sent by radar sensor is in spherical coordinate system (consisting of r
 #### Data Visualization ####
 To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.
 
+#### Parameter Server ####
+As the *hackathon extension* we have used the Number_Of_Locations as a parameter server. The value of this parameter sever can be changed using the following command:
+```
+rosparam set /Number_Of_Locations <value>
+```
+With this parameter server we can change the Number_Of_Locations during runtime.
+
 ***
 ## Publisher-Subscriber Model ##
 
@@ -138,13 +145,6 @@ location[] location_list
 float32 temperature
  ```
 
-```
-# radar_data_srv.srv
-
----
-location[] location_list
- ```
-
 ### Flowchart ###
 
 | Publisher Node              | Subscriber Node                     |
@@ -160,6 +160,13 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/1b623628-bf2f-4b98-a
 
 <p align="justify">
 PC1 acts as the server in this scenario, while PC2 serves as the client.</p>
+
+```
+# radar_data_srv.srv
+
+---
+location[] location_list
+ ```
 
 ### Flowchart ###
 
@@ -254,7 +261,10 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a
 
 ## About Us ##
 
-<a href="https://www.linkedin.com/in/dssanjaya/"><img align="center" src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/LinkedIn_Logo.png" alt="icon | LinkedIn" width="100px"/></a> - [D S Sanjaya](https://www.linkedin.com/in/dssanjaya/)  
+<a href="https://www.linkedin.com/in/dssanjaya/"><img align="center" src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/LinkedIn_Logo.png" alt="icon | LinkedIn" width="100px"/></a>
 
-<a href="https://www.linkedin.com/in/dssanjaya/"><img align="center" src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/LinkedIn_Logo.png" alt="icon | LinkedIn" width="100px"/></a> - [Prashant H](https://www.linkedin.com/in/dssanjaya/)  
+[D S Sanjaya](https://www.linkedin.com/in/dssanjaya/)  
+[Prashant H](https://www.linkedin.com/in/prashanth-h-07746126a/)  
+[Abhay Joshi](https://www.linkedin.com/in/abhay-joshi-6337a8228/)  
+[Nitish Kulkarni](https://www.linkedin.com/in/nitish-kulkarni-bb0427190/)  
 ***
