@@ -115,7 +115,7 @@ The data sent by radar sensor is in spherical coordinate system (consisting of r
 To visualize the data sent by PC1(i.e sensor node) is transformed to cartesian coordinate system in PC2 and then this converted data is published on PointCloud topic - RadarPointCloud. This PointCloud is visualized using the Rviz tool.
 
 #### Parameter Server ####
-As the *hackathon extension*, we have used the Number_Of_Locations as a parameter server. The value of this parameter server can be changed using the following command:
+As per the hackathon terms, we use the Number_Of_Locations as a parameter server. The value of this parameter server can be changed using the following command:
 ```
 rosparam set /Number_Of_Locations <value>
 ```
