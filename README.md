@@ -233,7 +233,7 @@ https://github.com/DSSanjaya/Visioners_ROS/assets/148639131/556058d0-a354-4d10-a
 * Radar gives out its temperature as one of the parameters and according to the datasheet, BOSCH's radar sensors have operating temperature range from -40°C to 85°C.
 * Normally most of the radars have Number_Of_Locations around 1000, including the radar sensors by BOSCH.
 * Initially the radar is set to provide *Max_Loc* = 1000 locations under normal temperature.
-* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.</p
+* To simulate this scenario of modulating the radar temperature, we use a parameter server called /Modulate_Temperature which varies the temperature exponentially.
 * To increase or decrease the temperature use the following commands :
   ```
    rosparam set /Modulate_Temperature increase
