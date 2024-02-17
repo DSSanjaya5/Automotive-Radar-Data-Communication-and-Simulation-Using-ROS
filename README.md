@@ -5,7 +5,7 @@
 </div>
 <details open> <summary> <h3> Table of Contents </h3></summary>
 	
- + [About BITES-BOSCH Hackathon](#about-bites-bosch-hackathon)
+ + [About BGSW-BITES Hackathon](#about-bites-bosch-hackathon)
  + [Problem Statement ROS](#problem-statement---ros)
  + [Installation of Softwares](#installation-of-softwares)
  + [Network Setup](#network-setup)
