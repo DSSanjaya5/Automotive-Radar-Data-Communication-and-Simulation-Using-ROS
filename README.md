@@ -1,6 +1,6 @@
 <div align="center"> 
 	<img src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/BITES_BOSCH_Logo.jpg" width=25% height=25%>
-	<h1> Winners of BITES-BOSCH Hackathon 2024 </h1> 
+	<h1> Winners of BGSW - BITES Hackathon 2024 </h1> 
 	<h1> Team Visioners </h1>  
 </div>
 <details open> <summary> <h3> Table of Contents </h3></summary>
