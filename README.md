@@ -2,8 +2,8 @@
 	<img src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/BITES_BOSCH_Logo.jpg" width=25% height=25%>
 	<h1> Winners of BGSW - BITES Hackathon 2024 </h1>
         <h1> Team Visioners </h1>  
-	<h1> Acknowledgement </h1>
-	 The completion of this project could not have been possible without the participation of a lot of individuals. We thank the BITES and BOSCH for organizing this event and providing us with the opportunity to participate in it. We are indebted to our KLE Tech Mentor Basawaraj and BOSCH Mentor Anirudh S Bhargav and Anil Kumar Chincholi who were nothing but a constant source of enthusiasm and whose profound guidance, valuable suggestions, and beneficent direction were mainly responsible for us to complete this project. Also, we would like to thank all the course faculty, teaching, and non-teaching staff for helping us during the project.      
+	
+	   
 
 
 </div>
@@ -24,6 +24,11 @@
   
 </details>
 
+***
+## Acknowledgement ##
+<p align="justify">
+The completion of this project could not have been possible without the participation of a lot of individuals. We thank the BITES and BOSCH for organizing this event and providing us with the opportunity to participate in it. We are indebted to our KLE Tech Mentor Basawaraj and BOSCH Mentor Anirudh S Bhargav and Anil Kumar Chincholi who were nothing but a constant source of enthusiasm and whose profound guidance, valuable suggestions, and beneficent direction were mainly responsible for us to complete this project. Also, we would like to thank all the course faculty, teaching, and non-teaching staff for helping us during the project.    
+	
 ***
 ## About BITES-BOSCH Hackathon ##
 <p align="justify">
