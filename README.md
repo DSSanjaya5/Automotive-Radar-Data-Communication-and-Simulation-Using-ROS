@@ -8,7 +8,8 @@
 
 </div>
 <details open> <summary> <h3> Table of Contents </h3></summary>
-	
+
+ + [Acknowledgement](#acknowledgement)
  + [About BGSW-BITES Hackathon](#about-bites-bosch-hackathon)
  + [Problem Statement ROS](#problem-statement---ros)
  + [Installation of Softwares](#installation-of-softwares)
