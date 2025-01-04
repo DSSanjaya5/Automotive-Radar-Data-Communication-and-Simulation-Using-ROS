@@ -1,7 +1,11 @@
 <div align="center"> 
-	<img src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/BITES_BOSCH_Logo.jpg" width=25% height=25%>
+	<img src="https://github.com/DSSanjaya/Visioners_ROS/blob/main/docs/BITES_BOSCH_Logo.jpg" width="25%" height="25%">
 	<h1> Winners of BGSW - BITES Hackathon 2024 </h1>
-        <h1> Team Visioners </h1>  
+    <h1> Team Visioners </h1>
+	<h3>Automotive Radar Data Communication and Simulation Using ROS -
+	<a href="https://link.springer.com/chapter/10.1007/978-981-97-6684-0_4">Paper Link</a>
+	</h3>
+</div>
 	
 	   
 
